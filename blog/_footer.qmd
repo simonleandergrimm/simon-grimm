@@ -1,4 +1,4 @@
-<hr>
+<!-- <hr>
 
 <details><summary>Session Info</summary>
 
@@ -12,8 +12,8 @@ pkg_sesh <- session_info(pkgs = "attached")
 quarto_version <- quarto::quarto_version()
 # inject the quarto info
 pkg_sesh$platform$quarto <- paste(
-  quarto::quarto_version(), 
-  "@", 
+  quarto::quarto_version(),
+  "@",
   quarto::quarto_path()
   )
 # print it out
@@ -22,4 +22,4 @@ pkg_sesh
 
 </div>
 
-</details>
+</details> -->
