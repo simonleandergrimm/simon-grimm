@@ -2,32 +2,45 @@
 comments: false
 page-layout: full
 format:
-  html: 
+  html:
     margin-top: 0em
     margin-bottom: 0em
     minimal: true
     smooth-scroll: true
     fig-responsive: true
+    grid:
+      body-width: 1500px
+      sidebar-width: 200px
+      margin-width: 200px
+    toc: true
 listing:
-  id: blog-listing
-  contents:   
-    - "blog/youtube-channel/index.qmd"
-    - "blog/website-tutorial-quarto/index.qmd"
-    - "blog/functional-programming-r-basics/index.qmd"
-    # - "blog/agile-methods-for-academia/index.qmd"
-    # - "blog/ggsimplex-prerelease/index.qmd"
-    # - "blog/4-realizations-from-atomic-habits/index.qmd"
-  sort: "date desc"
-  type: grid
-  max-items: 3
-  grid-columns: 3
-  fields: [image, date, title]
 
+
+  - id: white-papers
+    contents:
+      - "content_listings/white_papers.yml"
+    sort: "date desc"
+    type: default
+    fields: [image, date, title, description, author]
+    #image-height: 200px
+  - id: preprints
+    contents:
+      - "content_listings/preprints.yml"
+    sort: "date desc"
+    type: default
+    fields: [image, date, title, description, author]
+  - id: sample-listings
+    contents:
+      - "german-abundance/index.qmd"
+      - "talent-sorting/index.qmd"
+    sort: "date desc"
+    type: grid
+    fields: [image, date, title]
+
+
+
+  #type: grid
 ---
-
-
-
-
 
 
 ::: {.column-screen}
@@ -37,34 +50,19 @@ listing:
 <div class="gradient_bg">
     <div class="hero section_padding">
         <div class="hero_content">
-            <h1>Hi, I'm <span class="gradient_text">Marvin</span>.</h1>
-            <p>I am a Computer Scientist and a Psychologist.
-            I use generative models to solve problems in probabilistic machine learning.
-            </p>
+            <!-- <h1>Hi, I'm <span class="gradient_text">Marvin</span>.</h1> -->
+            <!-- </p> -->
             <p>
-            I am a final-year PhD student at the European Laboratory for Learning and Intelligent Systems (<a href="https://ellis.eu/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #E6AA04;'>ELLIS</span></a>) supervised by <a href="https://paul-buerkner.github.io/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #E6AA04;'>Paul Bürkner</span></a>. My main affiliation is the Cluster of Excellence <a href="https://www.simtech.uni-stuttgart.de/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #E6AA04;'>SimTech</span></a> at the University of Stuttgart, Germany. I am currently on a 6-month research visit at Aalto University, Finland, with my second ELLIS advisor <a href="https://users.aalto.fi/~ave/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #E6AA04;'>Aki Vehtari</span></a>
-.
+            Hi there, I'm Simon Grimm. I am currently working on building a reliable early warning system to detect novel pandemics at the <a href="https://naobservatory.org/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Nucleic Acid Observatory (NAO)</span></a>, working with <a href="https://www.linkedin.com/in/willbradshaw" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Will Bradshaw</span></a>, <a href="https://jefftk.com/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Jeff Kaufman</span></a>, and others. I'm affiliated with <a href="https://www.sculptingevolution.org/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>MIT's Sculpting Evolution</span></a> and SecureBio.
+
             </p>
-            <p>If you want to work with me as a collaborator, supervisor, instructor, or public speaker, drop me a message: <a href="mailto:mail.marvinschmitt@gmail.com"><span style='text-decoration: underline;
-  text-decoration-color: #E6AA04;'>mail.marvinschmitt@gmail.com</span></a></p>
-            
-            <!-- <p><b><span style="color:#E6AA04"">JOB MARKET 2024:</span></b> I am looking for machine learning positions in Europe (or remote) starting in winter 2024. My current interests revolve around deep learning, probabilistic ML, and ML4Science. I'm curious about new topics as well. I spend a considerable amount of my time programming in R and Python (PyTorch + TensorFlow). </p>
-            <p>Here is my <a href="cv/index.html"><span style='text-decoration: underline;
-  text-decoration-color: #E6AA04;'>CV (Link)</span></a>. Reach out if you think there might be a fit: <a href="mailto:mail.marvinschmitt@gmail.com"><span style='text-decoration: underline;
-  text-decoration-color: #E6AA04;'>mail.marvinschmitt@gmail.com</span></a></p>-->
-                <!--Check out my blog to learn more about deep learning, Bayesian statistics, psychology, software engineering, and a bit of everything in between. </p>
-            <p>If you want to get a notification about new content, consider entering your email here (it's free of course!):</p>
-            <div class="hero_content_input">
-                <iframe src="https://embeds.beehiiv.com/c7111066-479b-43db-ad92-8d703fe96bf0?slim=true" data-test-id="beehiiv-embed" frameborder="0" scrolling="no"></iframe>
-            </div>
-            <div class="hero_content_below_button">
-                <span>or <a href="blog/index.html" style="text-decoration: underline">read a bit of my blog first</a>.</span>
-            </div>
-            -->
+            <p>If you want to learn more about the NAO, biosecurity, or other things I'm interested in, please reach out: <a href="mailto:simonleandergrimm@gmail.com"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>simonleandergrimm@gmail.com</span></a>. You can also find me on <a href="https://twitter.com/simon__grimm" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Twitter</span></a>, <a href="https://github.com/simonleandergrimm/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Github</span></a>, <a href="https://www.linkedin.com/in/simon-leander-grimm" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Linkedin</span></a>, and <a href="https://www.goodreads.com/user/show/117248912-simon-grimm" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Goodreads</span></a>.</p>
+
+
 
         </div>
         <div class="hero_image">
-            <img src="/img/marvin_headshot.png"/>
+            <img src="/img/simon_headshot_white_large.png"/>
         </div>
         <div id="dot_container">
         </div>
@@ -77,8 +75,8 @@ listing:
         ></path>
     </svg>
     -->
-    
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 150" opacity="1"><defs><linearGradient gradientTransform="rotate(270)" x1="50%" y1="0%" x2="50%" y2="100%" id="sssquiggly-grad"><stop stop-color="hsl(44, 97%, 46%)" stop-opacity="1" offset="0%"></stop><stop stop-color="hsl(44, 97%, 46%)" stop-opacity="1" offset="100%"></stop></linearGradient></defs><g stroke-width="1.5" stroke="url(#sssquiggly-grad)" fill="none" stroke-linecap="round" transform="matrix(1,0,0,1,-5,51.00748062133789)">
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 150" opacity="1"><defs><linearGradient gradientTransform="rotate(270)" x1="50%" y1="0%" x2="50%" y2="100%" id="sssquiggly-grad"><stop stop-color="hsl(168, 49%, 43%)" stop-opacity="1" offset="0%"></stop><stop stop-color="hsl(168, 49%, 43%)" stop-opacity="1" offset="100%"></stop></linearGradient></defs><g stroke-width="1.5" stroke="url(#sssquiggly-grad)" fill="none" stroke-linecap="round" transform="matrix(1,0,0,1,-5,51.00748062133789)">
 <path d="M10,10C31.726190476190478,11.666666666666666,68.75,24.666666666666664,114.28571428571429,18C159.82142857142858,11.333333333333334,180.95238095238096,-22.833333333333332,228.57142857142858,-22C276.1904761904762,-21.166666666666668,295.2380952380953,19.916666666666668,342.8571428571429,22C390.4761904761905,24.083333333333332,409.5238095238095,-14.916666666666668,457.14285714285717,-12C504.7619047619048,-9.083333333333332,523.8095238095239,33.708333333333336,571.4285714285714,36C619.047619047619,38.291666666666664,638.0952380952382,-1.8333333333333333,685.7142857142858,-1C733.3333333333334,-0.16666666666666674,776.1904761904761,31.458333333333336,800,40" transform="matrix(1,0,0,1,0,50)"></path><path d="M10,10C31.726190476190478,11.666666666666666,68.75,24.666666666666664,114.28571428571429,18C159.82142857142858,11.333333333333334,180.95238095238096,-22.833333333333332,228.57142857142858,-22C276.1904761904762,-21.166666666666668,295.2380952380953,19.916666666666668,342.8571428571429,22C390.4761904761905,24.083333333333332,409.5238095238095,-14.916666666666668,457.14285714285717,-12C504.7619047619048,-9.083333333333332,523.8095238095239,33.708333333333336,571.4285714285714,36C619.047619047619,38.291666666666664,638.0952380952382,-1.8333333333333333,685.7142857142858,-1C733.3333333333334,-0.16666666666666674,776.1904761904761,31.458333333333336,800,40" transform="matrix(1,0,0,1,0,40)"></path><path d="M10,10C31.726190476190478,11.666666666666666,68.75,24.666666666666664,114.28571428571429,18C159.82142857142858,11.333333333333334,180.95238095238096,-22.833333333333332,228.57142857142858,-22C276.1904761904762,-21.166666666666668,295.2380952380953,19.916666666666668,342.8571428571429,22C390.4761904761905,24.083333333333332,409.5238095238095,-14.916666666666668,457.14285714285717,-12C504.7619047619048,-9.083333333333332,523.8095238095239,33.708333333333336,571.4285714285714,36C619.047619047619,38.291666666666664,638.0952380952382,-1.8333333333333333,685.7142857142858,-1C733.3333333333334,-0.16666666666666674,776.1904761904761,31.458333333333336,800,40" transform="matrix(1,0,0,1,0,30)"></path><path d="M10,10C31.726190476190478,11.666666666666666,68.75,24.666666666666664,114.28571428571429,18C159.82142857142858,11.333333333333334,180.95238095238096,-22.833333333333332,228.57142857142858,-22C276.1904761904762,-21.166666666666668,295.2380952380953,19.916666666666668,342.8571428571429,22C390.4761904761905,24.083333333333332,409.5238095238095,-14.916666666666668,457.14285714285717,-12C504.7619047619048,-9.083333333333332,523.8095238095239,33.708333333333336,571.4285714285714,36C619.047619047619,38.291666666666664,638.0952380952382,-1.8333333333333333,685.7142857142858,-1C733.3333333333334,-0.16666666666666674,776.1904761904761,31.458333333333336,800,40" transform="matrix(1,0,0,1,0,20)"></path><path d="M10,10C31.726190476190478,11.666666666666666,68.75,24.666666666666664,114.28571428571429,18C159.82142857142858,11.333333333333334,180.95238095238096,-22.833333333333332,228.57142857142858,-22C276.1904761904762,-21.166666666666668,295.2380952380953,19.916666666666668,342.8571428571429,22C390.4761904761905,24.083333333333332,409.5238095238095,-14.916666666666668,457.14285714285717,-12C504.7619047619048,-9.083333333333332,523.8095238095239,33.708333333333336,571.4285714285714,36C619.047619047619,38.291666666666664,638.0952380952382,-1.8333333333333333,685.7142857142858,-1C733.3333333333334,-0.16666666666666674,776.1904761904761,31.458333333333336,800,40" transform="matrix(1,0,0,1,0,10)"></path></g></svg>
 
 </div>
@@ -86,56 +84,22 @@ listing:
 
 <script src="html/jquery.min.js"></script>
 <script src="html/TweenMax.min.js"></script>
-<!--<script src="html/parallax.js"></script>-->
+<script src="html/parallax.js"></script>
 ```
-
 :::
 
-:::{#news}
-## News
 
-- **July 8, 2024**: I started a YouTube channel! The videos will broadly fall into these categories: Early career research based on my experience, technical machine learning topics, applied programming in R and Python. In my first video, I talk about my background and my plans for the channel: {{< video https://www.youtube.com/watch?v=5Z9yNEgbbfU
-    title="I started a YouTube channel!"
-    aspect-ratio="16x9" >}}
+## White Papers
 
-- **June 6, 2024**: My guest episode on the [Learning Bayesian Statistics](https://learnbayesstats.com/) podcast is live. We had a great conversation about my research on amortized Bayesian inference with neural networks. Here's the announcement post on [Twitter](https://x.com/MarvinSchmittML/status/1798708954769641638) and [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7204469302513602560/).
-
-- **April 3, 2024**: Just finished recording an episode of the [Learning Bayesian Statistics](https://learnbayesstats.com/) podcast. The episode will air later this summer. Thanks [Alex Andorra](https://twitter.com/alex_andorra) for having me as a guest!
-
-- **March 1, 2024**: I'm spending 6 months as a visiting researcher in the Probabilistic ML group at Aalto University in Finland, hosted by [Aki Vehtari](https://users.aalto.fi/~ave/).
-
-- **January 23, 2024**: I will be at [Bayes on the Beach 2024](https://research.qut.edu.au/qutcds/bayes-onthe-beach/), Australia, in February. I will give a talk about reliable amortized Bayesian inference with neural networks and co-lead a workshop on amortized Bayesian workflows.
-
-- **December 2023**: We launched the [BayesFlow Forums](https://discuss.bayesflow.org/)! The BayesFlow Forums provide a community for asking and answering questions about all aspects of [BayesFlow](https://www.bayesflow.org) and amortized Bayesian workflows in general. Hop over and join the discussion!
-
-- **October 11, 2023**: In our recent preprint, we make simulation-based inference more data-efficient by leveraging self-consistency properties of the Bayesian joint model. You find the preprint on [arXiv](https://arxiv.org/abs/2310.04395). Update: Published in the NeurIPS UniReps workshop.
-
-- **September 22, 2023**: Our paper "Detecting Model Misspecification in Amortized Bayesian Inference with Neural Networks" has been awarded the [DAGM GCPR Honorable Mention](https://x.com/MarvinSchmittML/status/1706281145501933850) at this year's German Conference on Pattern Recognition. Huge thanks to my great co-authors!
-
-- **September 6, 2023**: Our paper "Detecting Model Misspecification in Amortized Bayesian Inference with Neural Networks" has been accepted with oral presentation at the [German Conference for Pattern Recognition 2023](https://www.dagm-gcpr.de/year/2023). Learn more at the [project website](projects/#sbi-model-misspecification).
-
-- **June 21, 2023**: I will be at the [ELLIS Doctoral Symposium 2023](https://ellis.eu/events/ellis-doctoral-symposium-2023) in Helsinki from August 28 to September 1, 2023. Absolutely thrilled to meet other PhD students and researchers and talk about machine learning research in beautiful Helsinki!
-
-- **May 9, 2023**: Our paper "JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models" has been accepted to UAI 2023 (Uncertainty in AI). Check out the [project page](projects/#jana-jointly-amortized-neural-approximation-of-complex-bayesian-models) to find out more!
-
-- **May 1, 2023**: Our paper "Association between vitamin D status and eryptosis–results from the German National Cohort Study" has been published in *Annals of Hematology*. A great collaboration among twelve researchers from [Martin-Luther-University Halle-Wittenberg](https://www.uni-halle.de/), [Cluster of Excellence SimTech (University of Stuttgart)](https://www.simtech.uni-stuttgart.de/) and [University of Hohenheim](https://www.uni-hohenheim.de/en). Here's a [link to the paper](https://link.springer.com/article/10.1007/s00277-023-05239-w).
-
-- **April 12, 2023**: I have recorded a 15min presentation about our paper on *Meta-Uncertainty in Bayesian Model Comparison* (AISTATS 2023). Check it out: {{< video https://www.youtube.com/embed/WIigoUaqy9c
-    title="Meta-Uncertainty in Bayesian Model Comparison (AISTATS 2023)"
-    aspect-ratio="16x9" >}}
-
-- **March 29, 2023**: I'll be presenting our paper on *Meta-Uncertainty in Bayesian Model Comparison* at AISTATS 2023 from April 25-27 in Valencia, Spain. You find links to the paper and code on my <a href="projects/index.qmd#meta-uncertainty-BMC" target="_blank" style="color: #E6AA04;">Projects</a> page or on the dedicated <a href="https://meta-uncertainty.github.io/" target="_blank" style="color: #E6AA04;">paper website</a>. If you see me around at AISTATS, let's chat!
+:::{#white-papers}
 :::
 
-<!-- 
-- **March 20, 2023**: We are hiring a student assistant to help with software development for probabilistic machine learning, 5-10h/week. <a href="student_assistant_software_engineering_ml/index.html" target="_blank" style="color: #E6AA04;">Here</a> is a link to the advertisement. <a href="mailto:mail.marvinschmitt@gmail.com?subject=Student assistant ML software engineering" target="_blank" style="color: #E6AA04;">Drop me a mail</a> if you're interested!
+## Preprints/Articles
 
-- **March 10, 2023**: Heading to [BayesComp 2023](https://bayescomp2023.com/) in Levi, Finland. Finally putting faces to all those names from papers and Twitter. Presenting a [poster](projects/poster_bayescomp_mms.pdf) and an invited lightning talk. See you around! -->
+:::{#preprints}
+:::
 
-<!-- - **01.12.2021**: I have started working as a PhD researcher in Paul Buerkner's Junior Research Group for Bayesian Statistics at the Cluster of Excellence SimTech (University of Stuttgart). Excited to do hands-on research on Bayesian Statistics and Probabilistic Machine Learning! -->
+## Blog Posts
 
-
-
-## Featured Blog Posts
-:::{#blog-listing}
+:::{#sample-listings}
 :::
