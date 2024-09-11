@@ -1,0 +1,20 @@
+- title: "Indoor Air Sampling for Detection of Viral Nucleic Acids"
+  author:
+    - Lennart Justen
+    - Simon Grimm
+    - Kevin Esvelt
+    - Will Bradshaw
+  date: 2024-05-13
+  path: "https://dx.doi.org/10.2139/ssrn.4823882"
+  description: "In this review we examine the sources and composition of viral bioaerosols, evaluate the benefits and drawbacks of air sampling technologies, and lay out strategies for effective implementation of air sampling programs."
+  image: "img/air_sampling_abstract.png"
+
+- title: "Inferring the Sensitivity of Wastewater Metagenomic Sequencing for Pathogen Early Detection"
+  author:
+   - Simon Grimm
+   - Jeff Kaufman
+   - et al.
+  date: 2024-06-12
+  path: "https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full"
+  description: "In this preprint, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to to infer the sensitvitiy and cost of wastewater metagenomic sequencing for pathogen early detection."
+  image: "img/wastewater_preprint.png"
