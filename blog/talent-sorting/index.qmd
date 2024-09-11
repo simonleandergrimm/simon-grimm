@@ -1,0 +1,114 @@
+---
+title: "On why talent sorting in Germany is flawed"
+subtitle: "Medical school is great, but shouldn't be the default for high-achieving kids"
+author: "Simon Grimm"
+date: "2022-11-01"
+categories: [Germany, Education, Progress]
+image: "img/berlin-university.jpg"
+format:
+  html:
+    toc: true
+    toc-title: "On this page"
+    toc-location: left
+    page-layout: article
+---
+
+## TL;DR
+
+- German academia doesn't have world-class universities and is self-avowedly egalitarian.
+
+- Without a clear top university, **many talented students instead enter highly competitive medical schools** to prove their ability.
+
+- But, as argued here, **medical school is a bad default choice** for these students if you care about accelerated scientific, material, and moral progress. This is for four reasons:
+
+  1. Entering many different universities instead of one top college, talented students do not generate and thus do not profit from **[local agglomeration effects](https://en.wikipedia.org/wiki/Economies_of_agglomeration#:~:text=At%20the%20foundational,change.%5B6%5D).**
+
+  2. Medical students **aren't allowed the intellectual flexibility** to explore ideas and projects independently.
+
+  3. **Medical school takes six years**, offering no intermediate degree. This locks in students' choice of study, even if they change their minds.
+
+  4. **Lastly, practicing medicine offers [small impact at the margin](https://80000hours.org/career-reviews/medical-careers/#:~:text=Medical%20schools%20are,pretty%20modest.17)** (i.e., talented medical students can't add much to an already highly advanced medical system).
+
+- Instead, talented individuals could study subjects and enter jobs that allow them to [do much more good](https://80000hours.org/make-a-difference-with-your-career/).
+
+- Changing this status quo is difficult, as i) strong competition between universities is probably disliked by university administrations and ii) reforming existing universities is famously hard through entrenched bureaucratic decision-making and ensuing [vetocracy](https://en.wikipedia.org/wiki/Vetocracy). Thus, **change might only be possible through affluent outsiders who launch a new, better university.**
+
+## Epistemics
+
+*I'm uncertain how big the problem of bad talent allocation in Germany really is. However, given that it reduces the likelihood of careers with an outsized positive impact, the negative impact could be large.*
+
+*I would change my mind on the importance of this problem if i) elite colleges only add credentials [without increasing students' human capital](https://www.goodreads.com/en/book/show/36319077), or if ii) research breakthroughs, new companies, or social movements aren't made more likely by improved talent allocation.*
+
+## Introduction
+
+German undergraduate education is largely not considered world-class. Defining and ranking a "world-class university" is fuzzy and unsatisfying, but many still know which universities have the most prestige. For the sake of being more concrete, let's defer to Matt Yglesias to pick a criterion. He notes:
+
+> *"Boris Johnson's government recently rolled out an initiative to let recent graduates of the world's top universities move to the UK. That required them to come up with a definition of the world's top universities. **Of the 38 on the list, a staggering 20 are American.** And while it's true most of those are private [...], there are six US public universities on the list versus five European universities. **There are five California universities on the list (Stanford, Caltech, and three UCs) versus one from Germany*** [LMU Munich]. **"**
+
+Hence, every year American high school students jostle for a rare spot at one of the country's Ivy League universities. While students will also take other factors into account, they will want to go to a university that provides a credible signal of their ability. This might be even more true for ambitious or talented students, as the mere [signaling value](https://en.wikipedia.org/wiki/Signalling_(economics)) of being admitted to an elite university is often enough to guarantee a stellar career. This explains why Oxford graduates with a language degree can join DeepMind right after university.
+
+In contrast, the absence of a clear top university leaves German high-school students with no obvious university to go to. (We can test this by asking German and US-American students where they want to go to college after high school. Predicting the answer in Germany will be tricky.) This is partly by design, stemming from a stronger egalitarian streak in German academia.
+
+## A troubling century
+
+Where does this stronger desire for egalitarianism come from? Looking one century into the past, German universities were renowned throughout the West. Various American universities that are by now world-leading explicitly took the ["Humboldtian"](https://en.wikipedia.org/wiki/Humboldtian_model_of_higher_education#:~:text=The%20Humboldtian%20model%20of%20higher,combination%20of%20research%20and%20studies.) model of higher education as a gold standard worth emulating. As detailed by William Kirby's recent book ["Empires of Ideas"](https://www.goodreads.com/book/show/58885926-empires-of-ideas?ac=1&from_search=true&qid=pRP0PqmQ3s&rank=1), German universities lost much of their standing through the upheaval and destruction of World War II. A figure in Miguel Urquiola's ['Markets, Minds, and Money'](https://www.goodreads.com/book/show/51579387-markets-minds-and-money) plots this decline, showing which universities Nobel prize winners attended before receiving their Nobel awards.
+
+![The frequency with which Nobel winners' biographies mention universities in different countries. It plots countries' share of total mentions per year.](img/nobel-prizes.jpg)
+
+Subsequent reforms made many universities increasingly ungovernable through exaggerated democratization of university decision-making. Finally, the horrors of Nazi ideology made explicit talk of nurturing an elite unpalatable.
+
+![Humboldt University before various Germans decided to put Europe in ruin.](img/berlin-university.jpg)
+
+The cultural effect of this past manifested in a recent conversation with a German professor: When I pointed out the potential value of building a German Ivy-league type university, he was concerned mainly by how this would make all other German universities look second class.
+
+## What do German undergraduates study?
+
+Faced with a university landscape with no clear hierarchy, students disperse among many universities that do not differ much in their prestige.
+
+Students still want to distinguish themselves through their ambition and intellect. Thus, instead of competing to get into a high-status university, many instead vie for the most prestigious course of study, which in Germany is still, by and large, medicine.
+
+The source of this prestige is legible: spots for studying desired fields in popular universities are often mostly allocated by GPA; medicine is the only field requiring perfect GPAs (1.0; equalling all A or A* GPAs). Hence, not wanting to waste their perfect GPAs, many students enter medical school at various universities. Below are some above-average universities and their required GPAs for competitive fields. As we see, medicine is the only field that requires all A*:
+
+![](img/uni-ncs.jpg)
+
+You might wonder why students' love for medical school should be questioned, given the respect owed to medical doctors. While not disregarding medical doctors' self-sacrifice, there are two important reasons why medical school shouldn't be talented students' default choice. First, students (and their society) would gain more by studying flexible subjects, at one location, with other like-minded students. Second, the actual impact of additional medical doctors in Germany is fairly small. Let's take a look at these considerations in turn.
+
+## Empowering students can have great value
+
+The obvious choice for talented students in the UK and the US are universities like Oxbridge or Ivy League colleges. Though these universities have their own issues, they serve as an alternative that highlights the downsides of German undergraduate education.
+
+To begin with, instead of going to medical school, some A* students could live up to their strengths more flexibly by entering US-style undergraduate programs. Equipped with a broader set of skills and the signal of an Ivy-league, graduates can enter a wide variety of companies, work their way into prestigious publications, or push the technological frontier at start-ups or well-funded research institutes.
+
+Furthermore, lacking a national Schelling point for talented students leads to weaker [agglomeration effects](https://en.wikipedia.org/wiki/Economies_of_agglomeration#:~:text=One%20of%20the%20major%20subfields,cost%20savings%20can%20naturally%20arise.). Though economists typically use such effects to explain the productivity of London or Silicon Valley, bunching bright students together can have similar outsized returns. Innovations achieved by outfits like [MIT's Building 20](https://en.wikipedia.org/wiki/Building_20) (home of the first [LIGO](https://en.wikipedia.org/wiki/LIGO#Background) experiments) and [Bell Labs](https://en.wikipedia.org/wiki/Bell_Laboratories_Building_(Manhattan)) (development of the transistor, the photovoltaic cell, and information theory) illustrate the value of small but strong intellectual hubs.
+
+Though undergraduate students at Ivy League-type universities only spend 3-4 years together, their interactions likely last long after graduation: Investigating hyperlocal agglomeration effects, Matt Clancy of [New Things Under the Sun](https://www.newthingsunderthesun.com/) shows that once innovators find each other, they will continue to work and collaborate with one another even after geographic separation.
+
+Instead, without a clear intellectual hub to move to, many talented German students choose to enter medical studies at whatever university instead of all entering the same institution. This limits students' opportunity to build numerous, long-lasting relationships with similarly gifted students.
+
+## More doctors, little value
+
+But so what? After all, [many](https://time.com/6199666/physician-shortage-challenges-solutions/#:~:text=Data%20published%20in%202020%20by,%2D%20and%20specialty%2Dcare%20fields.) [Western](https://www.zeit.de/news/2022-06/30/studie-mangel-an-aerzten-und-fachpersonal-verschaerft-sich) [economies](https://www.nzz.ch/schweiz/nur-noch-ein-einziger-hausarzt-fuer-5800-personen-berner-studie-prognostiziert-dramatische-luecken-in-der-regionalen-gesundheitsversorgung-ld.1644690?reduced=true) complain of acute shortages of medical personnel (though in many cases, this shortage is [largely self-inflicted](https://www.theatlantic.com/ideas/archive/2022/02/why-does-the-us-make-it-so-hard-to-be-a-doctor/622065/#:~:text=You%20would%20also,do%20their%20job.)). Practicing medicine is also still widely respected, ranking as the 2nd most trusted profession (right after nursing) in a [2021 Gallup poll](https://news.gallup.com/poll/388649/military-brass-judges-among-professions-new-image-lows.aspx):
+
+![](img/liked-professions.jpg)
+
+Even so; although medical doctors do good (adding approximately [4 DALYs for every year of work](https://80000hours.org/career-reviews/medical-careers/#modest-direct-impact:~:text=Further%2C%20the%20%E2%80%98bottom%20line%E2%80%99%20figures%20(which%20are%20likely%20optimistic)%20suggest%20an%20additional%20doctor%20adds%20four%20health%20years%20for%20every%20year%20they%20work.)), there are [many other ways](https://80000hours.org/) to do vastly more good than working as a doctor (for instance, by donating $3,500 to the Against Malaria Foundation, thus saving [around one entire life](https://www.givewell.org/charities/top-charities/impact#:~:text=reducing%20deaths.-,What%20does%20your%20donation%20accomplish%3F,-A%20donation%20of)).
+
+In economic terms adding physicians to a highly advanced medical system offers comparably [small impact at the margin](https://80000hours.org/career-reviews/medical-careers/#:~:text=Medical%20schools%20are,pretty%20modest.17). The reasons for this are manifold. As noted in this [far more extensive article](https://80000hours.org/career-reviews/medical-careers/#:~:text=Medical%20schools%20are,pretty%20modest.17) by Gregory Lewis, Western medical systems are already filled with well-trained specialists who are aiming to rid us of remaining non-communicable diseases. All the while, (most) low-hanging fruit that extend life span have already been plucked by curbing endemic infectious disease, fighting [air pollution](https://ourworldindata.org/outdoor-air-pollution#:~:text=There%20are%20two%20key%20local%20air%20pollutants%20which%20can%20have%20adverse%20health%20impacts%3A%20ozone%20and%20particulate%20matter.%20Death%20rates%20from%20particulate%20matter%20pollution%20tend%20to%20be%20higher%20than%20that%20of%20ozone.), and a broad decline of [violence](https://www.goodreads.com/book/show/13543093-the-better-angels-of-our-nature?ac=1&from_search=true&qid=lkIXOBYUyP&rank=1).
+
+One could now try to salvage medical careers by pointing to the value of biomedical research. But again, this area of research is i) also far from neglected and ii) more impactful when pursued in the US. For instance, [Boudrea et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5786275/) analyzed publications in four major medical journals between 2000 and 2009, noting that
+
+> *"Harvard researchers account for around 5 percent of scientific articles published in the top four medical journals, **a larger share than Germany or Canada as a whole.**"*
+
+Any bright-eyed student fascinated by the life sciences should thus first try to get into a British or American university (and, if possible, apply for a scholarship by the DAAD, and the [German](https://www.studienstiftung.de/infos-fuer-studierende/finanzielle-foerderung/) or [Swiss](https://www.studienstiftung.ch/) Scholarship Foundation!)
+
+## Conclusion
+
+Smart high school graduates need better options than the current choice between homogeneous and middling universities, making too many of them opt for medical school. Importantly, the argument does not call for **fewer students** at medical schools but a **lower share of particularly talented students**. Generally, good physician performance likely requires above-average, but not outlier cognitive performance while also resting on factors such as social intelligence, conscientiousness, and stamina. Based on this, there are likely enough individuals fitting these criteria who would be happy to replace students currently attending medical school.
+
+To get towards such a world, we could either lower the allure of medical school or offer a different high-status option that provides greater societal value.
+
+To achieve the former, medical school admission officers could decrease their focus on GPAs, instead only requiring an entry test. Though testing would still be competitive, fewer students would think they would "waste" their A* grades if not attending medical school.
+
+To achieve the latter, one would want to change German higher education fundamentally by creating one or two clear champions among universities. Such change would likely need to come from outside current universities, as the status quo suits many senior German academics. I'll dive into the merits of launching such a university in a future blog post.
+
+Thanks for reading! If you have any feedback or other thoughts, shoot me an [email](mailto:simonleandergrimm@gmail.com) or dm me on [Twitter](https://twitter.com/simon__grimm).

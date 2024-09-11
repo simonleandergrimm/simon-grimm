@@ -1,0 +1,120 @@
+---
+title: "Germany's slow move toward supply-side reform"
+subtitle: "High energy prices, a skilled labor shortage, and bureaucratic hurdles stand in the way of economic growth. If holdouts can be convinced, the response may resemble American supply-side liberalism."
+categories: [Germany, Economics]
+date: "2023-09-29"
+image: "https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F71ac7b9c-f52c-45bd-b065-ea1ee00ad38b_1266x1600.png"
+format:
+  html:
+    toc: true
+    toc-title: "On this page"
+    toc-location: left
+    page-layout: article
+---
+
+## TL;DR
+
+- Germany's economy has seen no real GDP growth since 2019.
+
+- Rocked by the COVID-19 pandemic and the Ukraine war, Germany is facing three key structural supply-side limitations:
+
+  - A switch from Russian natural gas to liquid natural gas from overseas increases energy prices.
+  - An accelerating demographic transition will see the working population plummet by 7 million workers by 2035.
+  - Bureaucratic government structures and long approval processes slow down an economy that needs more flexibility.
+
+- Across the political spectrum, these limitations hinder policymakers' priorities.
+
+  - As a consequence, Germany's center-left coalition increasingly advocates for supply-side reforms.
+  - This mirrors the rise of [American "supply-side liberalism"](https://www.nytimes.com/2021/09/19/opinion/supply-side-progressivism.html), i.e., a center-left movement that advocates for the targeted reduction of government regulation with the goal of boosting growth rates and incomes.
+
+- This results in the following government actions:
+
+  - Several legislative acts, cutting approval times for new railroads and renewable power plants.
+  - An easing of environmental review requirements for infrastructure projects.
+  - An immigration reform mirroring the Canadian model, with more controlled refugee migration and a meritocratic, fine-tuneable points-based skilled immigration scheme.
+
+- It is to be decided if these and future policies will be ambitious enough, as several of Germany's ideological features could stand in the way:
+
+  - Immigration-skeptical views could hold down skilled immigration levels
+  - Environmentalist policies could slow down sectors that are economically important but not essential for the clean energy transition.
+  - Persisting demands for rent controls or electricity subsidies could slow the efficient build-out of housing or energy infrastructure.
+
+- If these impulses are kept in check, though, Germany might embrace the kind of economic reform that could boost long-term growth, accelerate innovation, and increase wages across income levels.
+
+## Introduction
+
+Germany's national mood has turned negative. All political parties agree that the economy is in trouble: real earnings are [falling](https://www.destatis.de/EN/Themes/Labour/Earnings/Real-Earnings-Net-Earnings/_node.html#:~:text=After%20revision%3A%20real%20earnings%20down%204.0%25%20in%202022%20from%202021), [rates of construction](https://www.dw.com/en/germany-new-housing-construction-set-to-strongly-decline/a-66290243) are down, and heavy industry is [offshoring energy-intensive production](https://translate.google.com/translate?hl=en&sl=de&u=https://www.sueddeutsche.de/wissen/chemie-ludwigshafen-am-rhein-basf-chef-setzt-auf-den-markt-in-china-dpa.urn-newsml-dpa-com-20090101-230728-99-567616). In the aggregate, the country has seen [no economic growth since 2019](https://fred.stlouisfed.org/graph/?g=18E5Y). For comparison, American readers of this post have become markedly wealthier over the same period, with real GDP rising from [$19.2 to $20.3 trillion](https://fred.stlouisfed.org/graph/?g=18E63). Germany flatlined at $4 trillion.
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4246e87b-310e-4579-aa9f-4a793acc5d1c_2060x995.png)
+
+To change this, policymakers need to tackle **three key challenges**: high energy prices, a shortage of skilled labor, and bureaucratic hurdles. All of these are supply-side limitations, i.e., the economy is not as productive as it could be due to costly energy, scarce labor, and a slow-moving regulatory state. Unlike the 2008 recession, stoking consumer demand is not advisable and would be actively harmful, with [inflation](https://translate.google.com/translate?hl=en&sl=de&u=https://www.destatis.de/DE/Presse/Pressemitteilungen/2023/08/PD23_311_611.html#:~:text=WIESBADEN%20%E2%80%93%20Die%20Inflationsrate%20in%20Deutschland,bei%20%2B6%2C2%20%25.) standing at 6.1%.
+
+Following German economic discourse over the past few months, we observed that more and more government actors _do_ realize the need for [supply-side reform](https://www.slowboring.com/p/america-needs-supply-side-reform). In a [recently published ten-point](https://www.bundesregierung.de/resource/blob/992814/2216780/1ae3b55bae09c6cb62b1c225fb619a66/2023-07-29-10-punkte-fuer-den-wirtschaftsstandort-deutschland-data.pdf?download=1) dossier, the governing coalition (made up of the center-left SPD, the environmentalist Greens, and the economically liberal FDP) lays out their policies to improve Germany's productivity: reducing lengthy approval procedures, increasing skilled immigration, reducing bureaucracy, and accelerating the build-out of the country's renewable energy supplies. Olaf Scholz [summarizes the attitude](https://translate.google.com/translate?hl=en&sl=de&u=https://www.bundesregierung.de/breg-de/suche/rede-von-bundeskanzler-scholz-zur-haushaltsdebatte-im-deutschen-bundestag-am-6-september-2023-2221590) behind this policy push like so:
+
+> "Only together will we shake off the **mildew of bureaucracy, risk aversion, and despondency** that has settled over our country for years and decades. This blight paralyzes our economy and causes frustration among the people in the country who just want Germany to function properly."
+
+We are excited about this new tone, especially as it resembles Derek Thompson's "[abundance agenda](https://www.theatlantic.com/ideas/archive/2022/01/scarcity-crisis-college-housing-health-care/621221/)." Known to people who are steeped in US economic discourse, this set of center-left ideas aims to increase material abundance, against which extensive environmental reviews or lengthy approval processes for infrastructure need to take a backseat. The goal of this is to enable all social classes to get more access to the goods and services they want and need. Less abstractly, families should be able to enjoy good public and private transport, affordable housing, and inexpensive energy.
+
+Aiming to boost a stagnant economy, Germany's center-left government now also begins to scrutinize a set of regulatory policies that they themselves traditionally support. While doing so, they face opposition from politicians in their own parties who continue to advocate for policies like electricity price caps and rent controls. These hold-outs, in particular, need to be persuaded that the status quo or short-term price controls demand-side measures cannot solve Germany's shortages in energy, labor, and housing. **Rather, the country's structural challenges require extensive supply-side reform.**
+
+## Energy: There's not enough of it
+
+Cheap energy makes an economy competitive, as the price of gas, oil, and electricity directly impacts the price of most goods. Germany never reached the low energy costs that the US enjoys. But by opting for Russian natural gas instead of liquified natural gas (LNG) from overseas, Germany pushed prices low enough to power a productive export-oriented industrial sector. Germany's bet on amicable trade relations with Russia has now turned bad, as Putin's war and the subsequent end of gas exports led to a record spike in natural gas prices in 2022.
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9812d136-8bc3-46be-8fc5-b9e855c84064_1600x1151.png)
+
+The government's immediate response has been encouraging. As gas prices spiked, it showed a rare capacity to build fast: Bypassing burdensome approval processes, LNG terminals were constructed [within 200 days](https://www.ft.com/content/ada3fc2b-c845-4c0a-92c7-984498812fc4). In plans to build further terminals on the island of Rügen, the federal government is tackling local NIMBY opposition head-on. The German government termed this new-found ability to build fast "Deutschlandgeschwindigkeit" (German speed), a meme we approve of.
+
+Still, as seen in the chart above, gas prices are higher than before and are expected to stay at higher levels for years. And even though gas power plants make up only [14%](https://www.destatis.de/EN/Themes/Economic-Sectors-Enterprises/Energy/Production/Tables/gross-electricity-production.html#:~:text=79.8-,13.8,-Mineral%20oil%20products) of Germany's electricity mix, they are needed to close the gaps of intermittent renewable energy production. As a result, the increased marginal cost of operating gas power plants pushes up the average cost of electricity, which will push [electricity prices to above pre-2019](https://www.vbw-bayern.de/Redaktion/Frei-zugaengliche-Medien/Abteilungen-GS/Wirtschaftspolitik/2023/Downloads/vbw_Strompreisprognose_Juli-2023-2.pdf) levels for years to come.
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffb9e296c-a941-4c43-b7eb-6e39519b1cc4_1994x1116.png)
+
+It's not a novel idea that high energy prices could be lowered by increasing electricity production, and to its credit, the current government is attempting to do so with renewables. The Greens, in particular, are accepting that building more energy infrastructure may require moderating longstanding environmentalist ideals. As the build-out of renewables is hampered by slow-moving approval processes and NIMBYism, the Green-led economics ministry has given the construction of renewables "overriding public interest," bypassing local opposition and concerns about biodiversity. On top of that, environmental impact review requirements are dropped for most renewable energy projects. This prioritization is producing results: renewables now regularly account for [30-50% of overall energy production](https://www.cleanenergywire.org/news/renewables-share-german-public-electricity-supply-reaches-record-high-july-researchers).
+
+However, the government acts less like an economist when thinking about nuclear power. As the Greens stuck to long-held anti-nuclear attitudes, the final three nuclear power plants were shut down this spring.[^1]
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F863490c6-2b9e-4941-ab02-5df3a1d51e49_1360x907.png)
+
+The resulting price hike would normally get the energy-intensive industry to push for compensatory electricity production. Instead, some politicians in the SPD and the Greens are considering to subsidize their electricity demand. Supported by a still-strong corporatist amalgam of large industrial company associations and industrial labor unions, such subsidies might help a couple of companies, but they stand in the way of structural economic reform: Energy subsidies will lower firms' incentive to develop energy-efficient processes while stifling the potential of cleaner and more innovative companies to outcompete them.
+
+Instead, the large funds required for such subsidies ([~€4b/y](https://translate.google.com/translate?hl=en&sl=de&u=https://www.tagesschau.de/wirtschaft/industriestrom-habeck-100.html)) could support promising programs to create markets and power plants for hydrogen or top up existing R&D funds for fusion and deep geothermal energy.
+
+## Labor: A workforce in decline
+
+An economy not only needs cheap energy; it also needs a strong and educated workforce. [Long-term labor supply](https://en.wikipedia.org/wiki/One_Billion_Americans) can be increased by boosting birth rates or immigration. Germany doesn't look so good on either count: The bulk of Germany's baby boomers are about to retire, and skilled immigration is low. With continued below-replacement birth rates and no policy intervention, the German [Institute for Employment Research](https://doku.iab.de/kurzber/2021/kb2021-25.pdf) predicts a drop in the working population of 7.2 million people by 2035, from 47.3 million workers to around 40.2 million. [More than 40% of German companies](https://www.bloomberg.com/news/articles/2022-10-17/germany-s-yawning-labor-shortage-squeezes-struggling-industry) already report that shortages of skilled labor are hindering greater production.
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8870318d-53b5-4102-b263-60bffd86687b_1600x903.png)
+
+Germany thus needs more skilled immigration. Upping immigration rates presents an all-around win: migrants enjoy far higher wages and better living conditions than at home, and Germany and the world will see higher growth rates as migrants can be more productive in Germany. The country has the potential to ramp up immigration: within Europe, it is migrants' [favored destination](https://news.gallup.com/poll/468218/nearly-900-million-worldwide-wanted-migrate-2021.aspx#:~:text=U.S.%20Still%20Top%20Desired%20Destination%2C%20but%20Less%20Attractive%20Today), though this is less true for [high-skilled migrants](https://translate.google.com/translate?hl=en&sl=de&u=https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2023/maerz/deutschland-faellt-zurueck-im-internationalen-wettbewerb-um-top-talente), where Germany ranks somewhere in the middle compared to [other OECD countries](https://translate.google.com/translate?hl=en&sl=de&u=https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2023/maerz/deutschland-faellt-zurueck-im-internationalen-wettbewerb-um-top-talente). Changing German culture to be more welcoming to foreigners is hard. But immigration reform is a straightforward next step.
+
+Here, the government comes closest to a clear [pro-growth vision](https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2023/03/fachkraefte-kabinett.html). Doing something that the US political class has been [unable to achieve](https://www.slowboring.com/p/stricter-border-control-more-immigration), the coalition chose the Canadian approach to immigration: Increasing control of irregular migration while introducing a new points-based, skilled immigration system. This might allow the government to escape debates between two narrow positions: open borders vs. closed borders. Instead, if the government wants to follow the green line in the chart below, it can use this new technocratic system to slowly ramp up immigration to the required levels of 400k a year.
+
+![](https://substackcdn.com/image/fetch/w_1456,c
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9d82dc2e-45b6-4544-b0ff-7fcb6a958b01_1600x1088.png)
+
+Vowing to build on this reform, [the government plans](https://www.bundesregierung.de/resource/blob/992814/2216780/1ae3b55bae09c6cb62b1c225fb619a66/2023-07-29-10-punkte-fuer-den-wirtschaftsstandort-deutschland-data.pdf?download=1) to further reduce the bureaucratic load faced by immigrants. Similar efforts to reduce bureaucratic burden are starting across other parts of government, as close to everyone recognizes that the government apparatus needs to become more nimble.
+
+## Bureaucracy: Price controls and fax machines
+
+The consequences of Germany's bureaucracy and intermittent use of price controls are most obvious when looking at the country's persistent housing [shortage](https://www.zeit.de/wirtschaft/2023-01/wohnungsmangel-mieterbund-lage-immer-dramatischer). In Berlin alone, [rents have tripled](https://www.ft.com/content/39c443c8-5761-4c3b-9bd7-21842447283a) over the past 18 years. When you buy into the [Housing Theory of Everything](https://worksinprogress.co/issue/the-housing-theory-of-everything), you will already know the many harms that a lack of housing causes, including decreasing [disposable income](https://worksinprogress.co/issue/the-housing-theory-of-everything#:~:text=Economists%20Peter%20Ganong,surplus%20of%20labour.), limiting [economic mobility](https://worksinprogress.co/issue/the-housing-theory-of-everything#:~:text=A%20great%20deal,a%20better%20life.), reducing [the production of new ideas](https://worksinprogress.co/issue/the-housing-theory-of-everything#:~:text=The%20Bay%20Area%2C%20including,mixing%20of%20individual%20elements.), and [disincentivizing family formation](https://worksinprogress.co/issue/the-housing-theory-of-everything#:~:text=Across%20the%20developed%20world%2C%20the,born%20in%20that%20period%20alone.).
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F80ba1395-801f-4591-88f2-0664b1450f9d_1262x1132.png)
+
+Vowing to build more, the coalition isn't on track to achieve its goals, building only [295,300](https://translate.google.com/translate?hl=en&sl=de&u=https://www.destatis.de/DE/Presse/Pressemitteilungen/2023/05/PD23_199_31121.html) out of 400,000 planned housing units in 2022. Rising interest rates partly explain this. But the government adds to the construction sector's [slow-down](https://www.destatis.de/DE/Presse/Pressemitteilungen/2023/08/PD23_329_3111.html) by limiting construction subsidies to projects that follow ever-more strict energy efficiency standards. On top of that, the discourse still hasn't moved on from discussions of rent control, as [the SPD's parliamentary faction](https://translate.google.com/translate?hl=en&sl=de&u=https://www.zdf.de/nachrichten/politik/spd-fraktion-mieten-massnahmen-100.html) recently demanded national price caps. This would only limit [future housing supply](https://www.ifo.de/en/press-release/2021-02-23/berlins-rent-cap-slows-rents-and-shrinks-supply-rental-properties), a bad outcome if we want more immigrants in areas with strong economic activity.
+
+Though faster than two years ago, the build-out of infrastructure is still fairly slow, as wind farms take an average [of four to five years](https://www.cleanenergywire.org/factsheets/german-onshore-wind-power-output-business-and-perspectives#:~:text=According%20to%20wind%20power%20industry%20lobby%20group%20BWE%2C%20the%20average%20duration%20from%20planning%20to%20licensing%20of%20a%20wind%20farm%20routinely%20takes%20four%20to%20five%20years.) to get licensed, and the construction of a vital long-range transmission line between South and North Germany was delayed by years. The slow, paper-based style of governing that leads to such slow-downs isn't anyone's goal. But with companies enjoying stable business and little demand for transformation, government agencies faced little pressure to modernize, leaving incoming policymakers with technologically outdated governing structures.
+
+All of this leads to a similar political situation to the one that gave rise to American supply-side liberalism. As bureaucratic structures are stunting everyone's priorities, whether climate change mitigation or more private investment, political factions beyond the economically liberal favor both modernizing the government apparatus and getting rid of burdensome regulation. If we only look at the names of major German legislative acts, we see that this frustration has its effect: Half of them are called "[Something] Acceleration Act," from the [Approval Acceleration Act](https://translate.google.com/translate?hl=en&sl=de&u=https://www.bundesregierung.de/breg-de/suche/genehmigungsbeschleunigung-2187452) over the [LNG Acceleration Act](https://www-bmwk-de.translate.goog/Redaktion/DE/Pressemitteilungen/2023/05/20230517-bundeskabinett-beschliesst-gesetzentwurf.html?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en) to the [Procurement Acceleration Act](https://www-bmvg-de.translate.goog/de/aktuelles/beschluss-beschaffung-fuer-die-bundeswehr-wird-beschleunigt-5450574?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en).
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F71ac7b9c-f52c-45bd-b065-ea1ee00ad38b_1266x1600.png)
+
+## Doubling down on sustainable, long-term growth
+
+Further reform is already supported by large parts of the coalition, the major conservative opposition party CDU, and leading economists. A key determinant of future reforms' success will hinge on the coalition embracing this support. Chancellor Scholz has recently done so with a proposed "[Pact for Germany](https://www-bundesregierung-de.translate.goog/breg-de/aktuelles/deutschland-pakt-2221564?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en)," offering to work with state-level government and the opposition to boost growth, accelerate planning, and attract more skilled workers. But, as some in the coalition are doing now, they could get side-tracked by contentious debates on electricity subsidies for heavy industry or price controls on housing.
+
+If the government instead doubles down on supply-side reform, the long-term benefits could be large. Yes, Germany is already a rich country. But by becoming more prosperous still, individuals can stay healthier, have better jobs, travel further, and have more leisure time. Government can do more, too, as it will have more funding to strengthen the welfare state and invest in research & development. Finally, by getting more room to breathe, businesses can use their industrial finesse to build the kind of clean industrial technologies the world needs.
+
+Many within the current coalition understand this. To support them, pointing to the past and current shortcomings of German economic policymaking can provide valuable insights. But it's also worth acknowledging that Germany has, in important areas, stopped [messing around](https://www.noahpinion.blog/p/germany-needs-to-stop-messing-around) and is picking policies that follow the tenets of supply-side liberalism. By moving forward with these and further reforms, Germany can get out of its economic malaise and lead Europe toward a cleaner and wealthier future.
+
+[^1]: Reactivating nuclear power plants is fairly unlikely, given that energy companies have been planning shutdowns for a decade, with demolitions now slowly underway. Consequently, even a shift in political power, such as the Greens losing influence in two years, won't make it possible to turn them back on. There is still stuff to argue for here, though. For instance, [Germany obstructs amendments to EU rule](https://www.google.com/search?q=eu+state+subsidy+nuclear+france+germany&oq=eu+state+subsidy+nuclear+france+germany&aqs=chrome..69i57j33i160.5610j0j1&sourceid=chrome&ie=UTF-8#:~:text=Brussels%20showdown%20brews,energy%2Dsubsidy%2Df...)s, which currently hinder France from investing more in its nuclear power plant fleet.
