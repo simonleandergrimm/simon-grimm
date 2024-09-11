@@ -1,0 +1,27 @@
+```{=html}
+<div class="list blog">
+    <% for (const entry of items) { %>
+    <div class="blog-entry" <%= metadataAttrs(entry) %>>
+        <div class="metadata">
+            <% if (entry.date) { %>
+            <p class="date listing-date"><%= entry.date %></p>
+            <% } %>
+            <% if (entry.authors) { %>
+            <p class="authors listing-authors"><%= entry.authors.join(', ') %></p>
+            <% } %>
+        </div>
+        <div class="body">
+            <p class="title listing-title">
+                <a href="<%= entry.href %>"><%= entry.name %></a>
+            </p>
+            <p class="description listing-description"><%= entry.description %></p>
+        </div>
+        <% if (entry.image) { %>
+        <div class="thumbnail">
+            <img src="<%= entry.image %>" alt="<%= entry.name %>" title="<%= entry.name %>" />
+        </div>
+        <% } %>
+    </div>
+    <% } %>
+</div>
+```

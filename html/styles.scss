@@ -23,15 +23,15 @@ $orange:  #E6AA04 !default;
 $light-orange:  #FB9E07 !default;
 $old-orange: #EE6A24 !default;
 $yellow:  #F6D645 !default;
-$green:   #118230 !default;
+$green:   #38a48c !default;
 $teal:    #20c997 !default;
 $cyan:    #3093CF !default;
 
-$primary:   $orange!default;
+$primary:   $green !default;
 $secondary: $gray-700 !default;
 $success:   $green !default;
 $info:      $cyan !default;
-$warning:   $orange !default;
+$warning:   $green !default;
 $danger:    $red !default;
 $light:     $gray-400 !default;
 $dark:      $black !default;
@@ -40,9 +40,9 @@ $dark:      $black !default;
 $--bs-navbar-color: #fff !default;
 
 // Links
-$link-color: $orange !default;
+$link-color: $green !default;
 $link-decoration: none !default;
-$link-hover-color: $orange !default;
+$link-hover-color: #38a48c !default;
 $link-hover-decoration: underline !default;
 
 // Footer
@@ -54,11 +54,11 @@ $code-bg: $gray-200 !default;
 $code-color: $gray-900 !default;
 
 // TOC
-$toc-color: $orange;
+$toc-color: $green;
 $toc-font-size: 1em;
 
 // Code copy
-$btn-code-copy-color-active: $orange !default;
+$btn-code-copy-color-active: $green !default;
 
 
 /*-- scss:rules --*/
@@ -88,7 +88,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 }
 
 .fixed-top {
- z-index:1000; 
+ z-index:1000;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -148,6 +148,7 @@ pre.text, pre.sourceCode, .cell-output pre {
             font-size: 1.3em;
             margin-bottom: 0.2em;
             line-height: 1.2;
+            color:#A52C60
         }
 
         .description {
@@ -187,11 +188,11 @@ pre.text, pre.sourceCode, .cell-output pre {
   color:$white;
 }
 
-#title-block-header.quarto-title-block.default .title, 
+#title-block-header.quarto-title-block.default .title,
 #title-block-header.quarto-title-block.default .code-tools-button p::before,
 #title-block-header.quarto-title-block.default .code-tools-button i::before
 {
-  color: $orange;
+  color: $white;
 }
 
 #quarto-content>* {
@@ -233,7 +234,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 
         .active {
             font-weight: 400;
-            color: $orange;
+            color: $green;
         }
 
         .quarto-category-count {
@@ -261,7 +262,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     //font-family: $footer-font-family;
 
     a {
-        color: $orange;
+        color: $green;
     }
 
     .faux-block {
@@ -269,7 +270,7 @@ pre.text, pre.sourceCode, .cell-output pre {
         padding-bottom: 0.4em;
     }
 
-    // In the default Quarto template, .nav-footer-center has position: absolute 
+    // In the default Quarto template, .nav-footer-center has position: absolute
     // turned on, which makes the div not be a flex item
     // This changes that so that it *is* a flex item
     .nav-footer-center {
@@ -283,7 +284,7 @@ pre.text, pre.sourceCode, .cell-output pre {
         }
     }
 
-    // When the screen is medium or smaller, make each footer chunk be 100% width 
+    // When the screen is medium or smaller, make each footer chunk be 100% width
     // and centered; otherwise make them be 33% width and left/right/centerd
     .nav-footer-left,
     .nav-footer-right,
@@ -317,5 +318,5 @@ pre.text, pre.sourceCode, .cell-output pre {
 }
 
 #news p a{
-  color: $orange;
+  color: $green;
 }
