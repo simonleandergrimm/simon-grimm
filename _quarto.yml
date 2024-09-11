@@ -1,9 +1,9 @@
-authorname: "Marvin Schmitt"
+authorname: "Simon Grimm"
 draft: false
 
 project:
   type: website
-  
+
   resources:
     - "img/**"
     - "assets/**"
@@ -11,80 +11,72 @@ project:
     - "_redirects"
     - "speaking/pdf/**"
 
-  preview: 
+  preview:
     port: 22222
     browser: true
     watch-inputs: true
     navigate: true
 
-title-meta: "Marvin Schmitt"
-description-meta: "Computer Scientist & Psychologist | PhD researcher | Deep Learning, Data Science, Research"
+title-meta: "Simon Grimm"
+description-meta: "Medical Doctor & Research Analyst | Biosecurity and Pandemic Preparedness"
 
 website:
-  title: "Marvin Schmitt"
-  description: "Computer Scientist & Psychologist | PhD researcher | Deep Learning, Data Science, Research"
-  site-url: https://www.marvinschmitt.com
+  title: "Simon Grimm"
+  #description: "Medical Doctor & Research Analyst | Biosecurity and Pandemic Preparedness"
+  site-url: https://www.simongrimm.com
   image: img/website_thumbnail.png
-  
+
   repo-url: "https://github.com/marvinschmitt/marvinschmitt-dot-com"
   repo-branch: main
-  
-  search: 
+
+  search:
     location: navbar
     type: textbox
-  
+
   navbar:
     pinned: true
-    logo: /img/ms_icon.png
+    logo: /img/windmill-icon.png
     left:
-      - text: Projects
-        href: projects/index.qmd
-      - text: Speaking
-        href: speaking/index.qmd
-      - text: CV
-        href: cv/index.qmd
+      # - text: Projects
+      #   href: projects/index.qmd
+      # - text: Speaking
+      #   href: speaking/index.qmd
+      # - text: CV
+      #   href: cv/index.qmd
       - text: Blog
         href: blog/index.qmd
     right:
       - icon: twitter
-        href: https://twitter.com/MarvinSchmittML
-      - icon: youtube
-        href: https://www.youtube.com/@marvin-schmitt
+        href: https://twitter.com/simon_grimm
       - icon: github
-        href: https://github.com/marvinschmitt
+        href: https://github.com/simonleandergrimm
       - icon: linkedin
-        href: https://www.linkedin.com/in/marvin-schmitt/
+        href: https://www.linkedin.com/in/simon-leander-grimm/
       - icon: envelope
         aria-label: email
-        href: "mailto:mail.marvinschmitt@gmail.com"
-  
-  favicon: img/favicon.ico
-  
-  twitter-card: 
+        href: "mailto:simonleandergrimm@gmail.com"
+
+  favicon: img/windmill.ico
+
+  twitter-card:
     creator: "@MarvinSchmittML"
     image: "/img/website_thumbnail.png"
-    
-  open-graph: 
+
+  open-graph:
     image: "/img/website_thumbnail.png"
     locale: en_US
-    
-  google-analytics: 
-    tracking-id: G-N36VLTEM79
-    storage: none
-  
-  page-footer: 
+
+  # google-analytics:
+  #   tracking-id: G-N36VLTEM79
+  #   storage: none
+
+  page-footer:
     left: |
-      <span class="faux-block">{{< fa brands creative-commons >}} 2023 Marvin Schmitt</span>
-      <span class="faux-block"><a href="https://github.com/marvinschmitt/marvinschmitt-dot-com">{{< fa brands github >}} Source Code</a></span>
-    center: |
-      <span class="faux-block"><a href="/impressum/index.html">Impressum</a></span>
-    right: |
-      <span class="faux-block"> Designed with {{< fa heart >}}</span>
-      <span class="faux-block"> Built with <a href="https://quarto.org/">Quarto</a></span>
-  
+      <span class="faux-block"><a href="https://github.com/marvinschmitt/marvinschmitt-dot-com">{{< fa brands github >}} Adapted from marvinschmitt.com</a></span>
+
 execute:
   freeze: true
-  
+
 filters:
   - html/newpagelink.lua
 
@@ -92,12 +84,12 @@ format:
   html:
     include-in-header: html/seo.html
     fontsize: 1.1em
-    theme: 
+    theme:
       - flatly
       - html/styles.scss
     toc: false
     anchor-sections: true
-    fig-cap-location: margin
+    fig-cap-location: bottom
     reference-location: margin
     footnotes-hover: true
     highlight-style: monokai
