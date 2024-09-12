@@ -6,10 +6,8 @@ project:
 
   resources:
     - "img/**"
-    - "assets/**"
     - "sitemap.xml"
     - "_redirects"
-    - "speaking/pdf/**"
 
   preview:
     port: 22222
@@ -26,7 +24,7 @@ website:
   site-url: https://www.simongrimm.com
   image: img/website_thumbnail.png
 
-  repo-url: "https://github.com/marvinschmitt/marvinschmitt-dot-com"
+  repo-url: "https://github.com/simonleandergrimm/simon-grimm"
   repo-branch: main
 
   search:
@@ -70,9 +68,9 @@ website:
   #   tracking-id: G-N36VLTEM79
   #   storage: none
 
-  page-footer:
-    left: |
-      <span class="faux-block"><a href="https://github.com/marvinschmitt/marvinschmitt-dot-com">{{< fa brands github >}} Adapted from marvinschmitt.com</a></span>
+  # page-footer:
+  #   left: |
+  #     <span class="faux-block"><a href="https://github.com/marvinschmitt/marvinschmitt-dot-com">{{< fa brands github >}} Adapted from marvinschmitt.com</a></span>
 
 execute:
   freeze: true
