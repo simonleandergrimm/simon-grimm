@@ -12,7 +12,7 @@ format:
       body-width: 1500px
       sidebar-width: 200px
       margin-width: 200px
-    toc: true
+    toc: false
 listing:
 
 
