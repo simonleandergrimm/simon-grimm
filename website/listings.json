@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/german-abundance/index.html",
+      "/blog/talent-sorting/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/blog/german-abundance/index.html",
+      "/blog/talent-sorting/index.html"
+    ]
+  }
+]
