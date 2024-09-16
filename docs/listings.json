@@ -1,13 +1,14 @@
 [
   {
-    "listing": "/blog/index.html",
+    "listing": "/index.html",
     "items": [
+      "/blog/thoughts-and-links-i/index.html",
       "/blog/german-abundance/index.html",
       "/blog/talent-sorting/index.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/blog/index.html",
     "items": [
       "/blog/german-abundance/index.html",
       "/blog/talent-sorting/index.html"

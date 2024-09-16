@@ -29,13 +29,16 @@ listing:
     sort: "date desc"
     type: default
     fields: [image, date, title, description, author]
-  - id: sample-listings
+  - id: blog-listings
     contents:
       - "german-abundance/index.qmd"
       - "talent-sorting/index.qmd"
+      - "thoughts-and-links-i/index.qmd"
     sort: "date desc"
     type: grid
     fields: [image, date, title]
+    image-height: 250px
+
 
 
 
@@ -62,7 +65,7 @@ listing:
 
         </div>
         <div class="hero_image">
-            <img src="/img/simon_headshot_white_large.png"/>
+            <img src="/img/simon_headshot.png"/>
         </div>
         <div id="dot_container">
         </div>
@@ -101,5 +104,5 @@ listing:
 
 ## Blog Posts
 
-:::{#sample-listings}
+:::{#blog-listings}
 :::
