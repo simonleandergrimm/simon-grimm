@@ -4,7 +4,7 @@
     - Simon Grimm
   date: 2024-02-19
   path: "https://naobservatory.org/reports/comparing-sampling-strategies-for-early-detection-of-stealth-biothreats"
-  description: "Here, Will Bradshaw and I outline how to think about the benefits and drawbacks of different sampling strategies for the early detection of asymptomatically spreading pathogens. Frameworks like the ones discussed in the report are used by the NAO to assess various sampling strategies, like wastewater or swab sampling."
+  description: "Will Bradshaw and I outline how to think about the benefits and drawbacks of different sampling strategies for the early detection of asymptomatically spreading pathogens. Frameworks like the ones discussed in the report are used by the NAO to assess various sampling strategies, like wastewater or swab sampling."
   image: "img/novelty_detection.png"
 
 - title: "Investigating the Sensitivity of Pooled Swab Sampling for Pathogen Early Detection"
@@ -13,5 +13,5 @@
    - Will Bradshaw
   date: 2024-07-01
   path: "https://naobservatory.org/blog/investigating-the-sensitivity-of-pooled-swab-sampling-for-pathogen-early-detection"
-  description: "Here, me and Will take existing swab sample sequencing data, adjust it to better represent samples from non-hospital settings, and use the results to model the likely sensitivity of a swab-sampling and metagenomics-based early detection system."
+  description: "Will Bradshaw and I take existing swab sample sequencing data, adjust it to better represent samples from non-hospital settings, and use the results to model the likely sensitivity of a swab-sampling and metagenomics-based early detection system."
   image: "img/swab_sensitivity.svg"
