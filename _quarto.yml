@@ -21,7 +21,7 @@ description-meta: "Medical Doctor & Research Analyst | Biosecurity and Pandemic 
 
 website:
   title: "Simon Grimm"
-  #description: "Medical Doctor & Research Analyst | Biosecurity and Pandemic Preparedness"
+  description: "Medical Doctor & Research Analyst | Biosecurity and Pandemic Preparedness"
   site-url: https://www.simongrimm.com
   image: img/website_thumbnail.png
 
