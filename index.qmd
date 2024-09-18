@@ -8,10 +8,10 @@ format:
     minimal: true
     smooth-scroll: true
     fig-responsive: true
-    grid:
-      body-width: 1500px
-      sidebar-width: 200px
-      margin-width: 200px
+    # grid:
+    #   body-width: 1500px
+    #   sidebar-width: 200px
+    #   margin-width: 200px
     toc: false
 
 listing:
