@@ -22,16 +22,9 @@ execute:
 format:
   html:
     code-tools: false
-    # comments:
-    #   giscus:
-    #     repo: marvinschmitt/marvinschmitt-dot-com
-    #     category: Announcements
-    #     loading: lazy
-    #     input-position: bottom
-    #     language: en
     quarto-template-params:
       banner-header-class: "blog-post"
-    include-after-body: ../html/blog_footer.html
+
 
 # Default author
 author:

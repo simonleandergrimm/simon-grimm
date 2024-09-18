@@ -258,8 +258,9 @@ pre.text, pre.sourceCode, .cell-output pre {
     align-items: flex-start;  // Align all flex items to the top
     flex-wrap: wrap;
     border: 0 !important;
-    min-height: 3em;
+    min-height: 1em;
     //font-family: $footer-font-family;
+    background-color: $black;  // Set the footer background color to black
 
     a {
         color: $green;
