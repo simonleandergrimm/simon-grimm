@@ -13,9 +13,8 @@ format:
       sidebar-width: 200px
       margin-width: 200px
     toc: false
+
 listing:
-
-
   - id: white-papers
     contents:
       - "content_listings/white_papers.yml"
