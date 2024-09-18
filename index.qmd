@@ -41,7 +41,7 @@ listing:
 
 
 
-  #type: grid
+
 ---
 
 
