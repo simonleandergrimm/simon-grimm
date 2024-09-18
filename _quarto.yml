@@ -58,7 +58,7 @@ website:
   favicon: img/windmill.ico
 
   twitter-card:
-    creator: "@MarvinSchmittML"
+    creator: "@simon__grimm"
     image: "/img/website_thumbnail.png"
 
   open-graph:
@@ -69,9 +69,9 @@ website:
   #   tracking-id: G-N36VLTEM79
   #   storage: none
 
-  # page-footer:
-  #   left: |
-  #     <span class="faux-block"><a href="https://github.com/marvinschmitt/marvinschmitt-dot-com">{{< fa brands github >}} Adapted from marvinschmitt.com</a></span>
+  page-footer:
+    left: |
+      <span class="faux-block"><a href="https://github.com/marvinschmitt/marvinschmitt-dot-com">{{< fa brands github >}} Adapted from marvinschmitt.com</a></span>
 
 execute:
   freeze: true
