@@ -3,7 +3,6 @@ title: "On why talent sorting in Germany is flawed"
 subtitle: "Medical school is great, but shouldn't be the default for high-achieving kids"
 author: "Simon Grimm"
 date: "2022-11-01"
-categories: [Germany, Education, Progress]
 image: "img/berlin-university.jpg"
 format:
   html:

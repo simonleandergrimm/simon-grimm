@@ -1,7 +1,6 @@
 ---
 title: "Germany's slow move toward supply-side reform"
 subtitle: "High energy prices, a skilled labor shortage, and bureaucratic hurdles stand in the way of economic growth. If holdouts can be convinced, the response may resemble American supply-side liberalism."
-categories: [Germany, Economics]
 date: "2023-09-29"
 image: "https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F71ac7b9c-f52c-45bd-b065-ea1ee00ad38b_1266x1600.png"
 format:
