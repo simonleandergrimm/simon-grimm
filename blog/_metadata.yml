@@ -6,10 +6,11 @@ freeze: true
 description-meta: "{{< meta description >}}"
 
 # Enable banner style title blocks
-title-block-banner: "#000000" #"../img/bg_trees_dark_banner.png"
+title-block-banner: "#38A48C" #"../img/bg_trees_dark_banner.png"
 
 # Default for table of contents
 toc: true
+# toc-color: white
 #toc-title: Contents
 toc-location: left
 
