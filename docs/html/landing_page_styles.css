@@ -147,6 +147,26 @@ a {
     max-width: 700px;
 }
 
+/* Alternative that is more mobile friendly:
+
+
+.hero {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on mobile */
+/*    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.hero_content {
+    flex: 1;
+    min-width: 300px; /* Ensure minimum readable width */
+/*    max-width: 100%; /* Allow full width on mobile */
+ /*   padding: 1rem;
+} */
+
+
 .hero_content h1 {
     font-weight: 800;
     font-size: 62px;
