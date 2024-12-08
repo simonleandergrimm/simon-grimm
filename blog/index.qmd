@@ -1,5 +1,5 @@
 ---
-title: "`Blog"
+title: "Blog"
 author: ""
 title-block-banner: false
 page-layout: full
