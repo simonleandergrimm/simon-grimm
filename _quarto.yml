@@ -34,14 +34,8 @@ website:
 
   navbar:
     pinned: true
-    logo: /img/windmill-icon.png
+    # logo: /img/windmill-icon.png
     left:
-      # - text: Projects
-      #   href: projects/index.qmd
-      # - text: Speaking
-      #   href: speaking/index.qmd
-      # - text: CV
-      #   href: cv/index.qmd
       - text: Blog
         href: blog/index.qmd
     right:
@@ -84,7 +78,7 @@ format:
     include-in-header: html/seo.html
     fontsize: 1.1em
     theme:
-      - flatly
+      # - flatly
       - html/styles.scss
     toc: false
     anchor-sections: true
