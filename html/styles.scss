@@ -60,6 +60,14 @@ $toc-font-size: 1em;
 // Code copy
 $btn-code-copy-color-active: $green !default;
 
+// Bootstrap navbar overrides
+$--bs-navbar-color: #fff !default;
+$--bs-navbar-hover-color: #fff !default;
+$--bs-navbar-disabled-color: rgba(255, 255, 255, 0.75) !default;
+$--bs-navbar-active-color: #fff !default;
+$--bs-navbar-brand-color: #fff !default;
+$--bs-navbar-brand-hover-color: #fff !default;
+$--bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.5) !default;
 
 /*-- scss:rules --*/
 
@@ -72,42 +80,70 @@ pre.text, pre.sourceCode, .cell-output pre {
     font-size: 0.775em;
 }
 
-.navbar-nav.navbar-nav-scroll.ms-auto {
-    flex-direction: row;
-}
+// Bootstrap navbar overrides
+$--bs-navbar-color: #fff !default;
+$--bs-navbar-hover-color: #fff !default;
+$--bs-navbar-disabled-color: rgba(255, 255, 255, 0.75) !default;
+$--bs-navbar-active-color: #fff !default;
+$--bs-navbar-brand-color: #fff !default;
+$--bs-navbar-brand-hover-color: #fff !default;
+$--bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.5) !default;
 
-.sidebar nav[role="doc-toc"]>ul li a {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-}
+// Additional Bootstrap overrides for dropdown and search
+$navbar-dark-color: #fff !default;
+$navbar-dark-hover-color: #fff !default;
+$navbar-dark-active-color: #fff !default;
+$navbar-dark-disabled-color: rgba(255, 255, 255, 0.75) !default;
+$navbar-dark-toggler-border-color: rgba(255, 255, 255, 0.5) !default;
 
+
+// Navbar styling
 .navbar {
-  z-index: 0;
-  background: black;
-  /*background: linear-gradient(90deg, rgba(0, 97, 242, 1) 0%, rgba(105, 0, 199, 1) 100%);*/
+    z-index: 0;
+    background: #38A48C;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-collapse {
+    background: #38A48C;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.nav-link,
+.navbar-title,
+.navbar .search-box,
+.navbar .search-box::placeholder {
+    color: #fff !important;
 }
 
 .fixed-top {
- z-index:1000;
+    z-index: 1000;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  z-index:0;
-  color: #fff;
+    z-index: 0;
+    color: #fff;
 }
 
 .nav-link {
-  color: #fff;
+    color: #fff;
 }
 
-.navbar-dark:hover .navbar-nav:hover .nav-link:hover{
-  z-index: 0;
-  color: $orange !important;
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
+    z-index: 0;
+    color: $orange !important;
 }
 
 .navbar-title {
-  color: #fff;
-  z-index: 10;
+    color: #fff;
+    z-index: 10;
 }
 
 .quarto-grid-item img.thumbnail-image {
@@ -184,9 +220,12 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
-#title-block-header.quarto-title-block.default .description, .title{
-  color:$white;
-}
+#title-block-header.quarto-title-block.default {
+    .description,
+    .title {
+      color: $white;
+    }
+  }
 
 #title-block-header.quarto-title-block.default .title,
 #title-block-header.quarto-title-block.default .code-tools-button p::before,
@@ -260,54 +299,95 @@ pre.text, pre.sourceCode, .cell-output pre {
     border: 0 !important;
     min-height: 1em;
     //font-family: $footer-font-family;
-    background-color: $black;  // Set the footer background color to black
+    background-color: #38A48C;
 
     a {
-        color: $green;
+        color: $white;
     }
+}
+//     .faux-block {
+//         display: block;
+//         padding-bottom: 0.4em;
+//     }
 
-    .faux-block {
-        display: block;
-        padding-bottom: 0.4em;
-    }
+//     // In the default Quarto template, .nav-footer-center has position: absolute
+//     // turned on, which makes the div not be a flex item
+//     // This changes that so that it *is* a flex item
+//     .nav-footer-center {
+//         text-align: center;
+//         position: inherit;
+//         margin-top: 0;
 
-    // In the default Quarto template, .nav-footer-center has position: absolute
-    // turned on, which makes the div not be a flex item
-    // This changes that so that it *is* a flex item
-    .nav-footer-center {
-        text-align: center;
-        position: inherit;
-        margin-top: 0;
+//         @media (max-width: map-get($grid-breakpoints, md)) {
+//             margin-top: 0.5em;
+//             margin-bottom: 1.5em;
+//         }
+//     }
 
-        @media (max-width: map-get($grid-breakpoints, md)) {
-            margin-top: 0.5em;
-            margin-bottom: 1.5em;
-        }
-    }
+//     // When the screen is medium or smaller, make each footer chunk be 100% width
+//     // and centered; otherwise make them be 33% width and left/right/centerd
+//     .nav-footer-left,
+//     .nav-footer-right,
+//     .nav-footer-center {
+//         text-align: center;
+//         width: 100%;
+//         min-height: 2em;
+//     }
 
-    // When the screen is medium or smaller, make each footer chunk be 100% width
-    // and centered; otherwise make them be 33% width and left/right/centerd
-    .nav-footer-left,
-    .nav-footer-right,
-    .nav-footer-center {
-        text-align: center;
-        width: 100%;
-        min-height: 2em;
-    }
+//     @media (min-width: map-get($grid-breakpoints, md)) {
+//         .nav-footer-left {
+//             text-align: left;
+//         }
 
-    @media (min-width: map-get($grid-breakpoints, md)) {
-        .nav-footer-left {
-            text-align: left;
-        }
+//         .nav-footer-right {
+//             text-align: right;
+//         }
 
-        .nav-footer-right {
-            text-align: right;
-        }
+//         .nav-footer-left,
+//         .nav-footer-right,
+//         .nav-footer-center {
+//             flex: 1 1 33%;
+//         }
+//     }
+// }
 
-        .nav-footer-left,
-        .nav-footer-right,
-        .nav-footer-center {
-            flex: 1 1 33%;
+// // Update blog post subtitle styling
+// .quarto-title-meta {
+//     background-color: #38A48C;
+//     color: $white;
+
+//     .quarto-title-meta-heading,
+//     .quarto-title-meta-contents,
+//     a {
+//         color: $white !important;
+//     }
+// }
+
+// // If there are any other dark/black elements in blog posts
+// .quarto-title {
+//     background-color: $green;
+
+//     h1, p {
+//         color: $white;
+//     }
+// }
+
+
+.sidebar nav[role=doc-toc] {
+    color: $gray-700;
+
+    ul {
+        > li > a {
+            color: $gray-700 !important;  // Force gray color
+
+            &.active {
+                border-left: 1px solid $green !important;
+                color: $green !important;
+            }
+
+            &:hover {
+                color: $green !important;
+            }
         }
     }
 }
@@ -317,6 +397,8 @@ pre.text, pre.sourceCode, .cell-output pre {
   color: gray;
   font-style: italic;
 }
+
+
 
 #news p a{
   color: $green;
