@@ -151,6 +151,38 @@ $navbar-dark-toggler-border-color: rgba(255, 255, 255, 0.5) !default;
                 object-fit: contain;
         }
 
+
+// Social media buttons fix for mobile
+.navbar-nav-scroll.ms-auto {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .nav-item.compact {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+// Ensure proper spacing and alignment
+@media screen and (max-width: 768px) {
+.navbar-nav-scroll.ms-auto {
+    margin-top: 1rem;
+    justify-content: left;
+    width: 100%;
+
+    .nav-item.compact {
+    margin: 0;
+
+    .nav-link {
+        padding: 0.5rem;
+    }
+    }
+}
+}
+
+
+
 // Blog
 .blog {
     .blog-entry {
