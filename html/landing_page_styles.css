@@ -150,9 +150,15 @@ a {
     flex-direction: column;
     z-index: 7;
     margin-right: 5rem;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
     margin: auto;
     max-width: 800px;
+}
+
+@media screen and (min-width: 1050px) {
+    .hero_content {
+        padding-left: 3rem;
+    }
 }
 
 .hero_content h1 {
