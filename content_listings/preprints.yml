@@ -16,5 +16,5 @@
    - et al.
   date: 2024-06-12
   path: "https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full"
-  description: "In this preprint, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to to infer the sensitvitiy and cost of wastewater metagenomic sequencing for pathogen early detection."
+  description: "In this preprint, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to infer the sensitvitiy and cost of wastewater metagenomic sequencing for pathogen early detection."
   image: "img/detection_threshold.png"
