@@ -15,6 +15,12 @@ format:
     toc: false
 
 listing:
+  - id: policy-briefs
+    contents:
+      - "content_listings/policy_briefs.yml"
+    sort: "date desc"
+    type: default
+    fields: [image, date, title, description, author]
   - id: white-papers
     contents:
       - "content_listings/white_papers.yml"
@@ -32,7 +38,6 @@ listing:
     contents:
       - "german-abundance/index.qmd"
       - "talent-sorting/index.qmd"
-      - "thoughts-and-links-i/index.qmd"
     sort: "date desc"
     type: grid
     fields: [image, date, title]
@@ -53,10 +58,10 @@ listing:
     <div class="hero section_padding">
         <div class="hero_content">
             <p>
-            Hi there, I'm Simon Grimm. I am currently working on building a reliable early warning system to detect novel pandemics at the <a href="https://naobservatory.org/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Nucleic Acid Observatory (NAO)</span></a>, working with <a href="https://www.linkedin.com/in/willbradshaw" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Will Bradshaw</span></a>, <a href="https://jefftk.com/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Jeff Kaufman</span></a>, and others. I'm affiliated with <a href="https://www.sculptingevolution.org/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>MIT's Sculpting Evolution</span></a> and SecureBio.
+            Hi there, I'm Simon Grimm. I am currently working on building a reliable early warning system to detect novel pandemics at the <a href="https://naobservatory.org/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Nucleic Acid Observatory (NAO)</span></a>, working with <a href="https://www.linkedin.com/in/willbradshaw" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Will Bradshaw</span></a>, <a href="https://jefftk.com/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Jeff Kaufman</span></a>, and others.
 
             </p>
-            <p>If you want to learn more about the NAO, biosecurity, or other things I'm interested in, please reach out: <a href="mailto:simonleandergrimm@gmail.com"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>simonleandergrimm@gmail.com</span></a>. You can also find me on <a href="https://twitter.com/simon__grimm" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Twitter</span></a>, <a href="https://github.com/simonleandergrimm/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Github</span></a>, <a href="https://www.linkedin.com/in/simon-leander-grimm" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Linkedin</span></a>, and <a href="https://www.goodreads.com/user/show/117248912-simon-grimm" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Goodreads</span></a>.</p>
+            <p>If you want to chat please reach out via mail (<a href="mailto:simonleandergrimm@gmail.com"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>simonleandergrimm@gmail.com</span></a>) or Twitter (<a href="https://twitter.com/simon__grimm" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>@simon__grimm</span></a>). You can also find me on <a href="https://github.com/simonleandergrimm/" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>GitHub</span></a>, <a href="https://www.linkedin.com/in/simon-leander-grimm" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Linkedin</span></a>, and <a href="https://www.goodreads.com/user/show/117248912-simon-grimm" target="_blank"><span style='text-decoration: underline;text-decoration-color: #38A48C;'>Goodreads</span></a>.</p>
 
 
 
@@ -88,6 +93,10 @@ listing:
 ```
 :::
 
+## Policy Briefs
+
+:::{#policy-briefs}
+:::
 
 ## White Papers
 

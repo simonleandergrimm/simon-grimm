@@ -72,6 +72,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-policy-briefs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-description","listing-image"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-policy-briefs'] = new List('listing-policy-briefs', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-white-papers .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -266,10 +294,10 @@ window.Quarto = {
     <div class="hero section_padding">
         <div class="hero_content">
             <p>
-            Hi there, I'm Simon Grimm. I am currently working on building a reliable early warning system to detect novel pandemics at the <a href="https://naobservatory.org/" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Nucleic Acid Observatory (NAO)</span></a>, working with <a href="https://www.linkedin.com/in/willbradshaw" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Will Bradshaw</span></a>, <a href="https://jefftk.com/" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Jeff Kaufman</span></a>, and others. I'm affiliated with <a href="https://www.sculptingevolution.org/" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">MIT's Sculpting Evolution</span></a> and SecureBio.
+            Hi there, I'm Simon Grimm. I am currently working on building a reliable early warning system to detect novel pandemics at the <a href="https://naobservatory.org/" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Nucleic Acid Observatory (NAO)</span></a>, working with <a href="https://www.linkedin.com/in/willbradshaw" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Will Bradshaw</span></a>, <a href="https://jefftk.com/" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Jeff Kaufman</span></a>, and others.
 
             </p>
-            <p>If you want to learn more about the NAO, biosecurity, or other things I'm interested in, please reach out: <a href="mailto:simonleandergrimm@gmail.com"><span style="text-decoration: underline;text-decoration-color: #38A48C;">simonleandergrimm@gmail.com</span></a>. You can also find me on <a href="https://twitter.com/simon__grimm" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Twitter</span></a>, <a href="https://github.com/simonleandergrimm/" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Github</span></a>, <a href="https://www.linkedin.com/in/simon-leander-grimm" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Linkedin</span></a>, and <a href="https://www.goodreads.com/user/show/117248912-simon-grimm" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Goodreads</span></a>.</p>
+            <p>If you want to chat please reach out via mail (<a href="mailto:simonleandergrimm@gmail.com"><span style="text-decoration: underline;text-decoration-color: #38A48C;">simonleandergrimm@gmail.com</span></a>) or Twitter (<a href="https://twitter.com/simon__grimm" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">@simon__grimm</span></a>). You can also find me on <a href="https://github.com/simonleandergrimm/" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">GitHub</span></a>, <a href="https://www.linkedin.com/in/simon-leander-grimm" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Linkedin</span></a>, and <a href="https://www.goodreads.com/user/show/117248912-simon-grimm" target="_blank"><span style="text-decoration: underline;text-decoration-color: #38A48C;">Goodreads</span></a>.</p>
 
 
 
@@ -299,11 +327,133 @@ window.Quarto = {
 <script src="html/TweenMax.min.js"></script>
 <script src="html/parallax.js"></script>
 </div>
+<section id="policy-briefs" class="level2">
+<h2 class="anchored" data-anchor-id="policy-briefs">Policy Briefs</h2>
+<div id="listing-policy-briefs" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1758600000000">
+<div class="thumbnail">
+<p><a href="https://naobservatory.org/blog/biothreat_radar" class="no-external"></a></p><a href="https://naobservatory.org/blog/biothreat_radar" class="no-external">
+<p><img loading="lazy" src="img/at-scale-surveillance.svg" class="thumbnail-image"></p>
+</a><p><a href="https://naobservatory.org/blog/biothreat_radar" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://naobservatory.org/blog/biothreat_radar" class="no-external">Scaling US Pathogen Detection</a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://naobservatory.org/blog/biothreat_radar" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="https://naobservatory.org/blog/biothreat_radar" class="no-external">Here we model how the US could dramatically scale up its pathogen detection capabilities at a funding level of $52M/year. The system design is both informed by modeling work, and NAO’s extensive experience modeling metagenomic biourveillance.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="https://naobservatory.org/blog/biothreat_radar" class="no-external">
+<div class="listing-date">
+Sep 23, 2025
+</div>
+<div class="listing-author">
+Simon Grimm, Lennart Justen, Jeff Kaufman
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1754884800000">
+<div class="thumbnail">
+<p><a href="https://ifp.org/scaling-pathogen-detection-with-metagenomics" class="no-external"></a></p><a href="https://ifp.org/scaling-pathogen-detection-with-metagenomics" class="no-external">
+<p><img loading="lazy" src="img/genome-cost.svg" class="thumbnail-image"></p>
+</a><p><a href="https://ifp.org/scaling-pathogen-detection-with-metagenomics" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://ifp.org/scaling-pathogen-detection-with-metagenomics" class="no-external">Scaling Pathogen Detection with Metagenomics</a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://ifp.org/scaling-pathogen-detection-with-metagenomics" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="https://ifp.org/scaling-pathogen-detection-with-metagenomics" class="no-external">For the Institute for Progress’ <span>Launch Sequence series</span>, I describe how government deployment of metagenomic sequencing, combined with the increased use of frontier AI for data analysis, can identify both known and novel pathogens.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="https://ifp.org/scaling-pathogen-detection-with-metagenomics" class="no-external">
+<div class="listing-date">
+Aug 11, 2025
+</div>
+<div class="listing-author">
+Simon Grimm
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1746504000000">
+<div class="thumbnail">
+<p><a href="https://www.rebuilding.tech/posts/accelerating-the-defensive-deployment-of-pathogen-sequencing" class="no-external"></a></p><a href="https://www.rebuilding.tech/posts/accelerating-the-defensive-deployment-of-pathogen-sequencing" class="no-external">
+<p><img loading="lazy" src="img/techno-industrial-playbook.png" class="thumbnail-image"></p>
+</a><p><a href="https://www.rebuilding.tech/posts/accelerating-the-defensive-deployment-of-pathogen-sequencing" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://www.rebuilding.tech/posts/accelerating-the-defensive-deployment-of-pathogen-sequencing" class="no-external">Accelerating the Defensive Deployment of Pathogen Sequencing</a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://www.rebuilding.tech/posts/accelerating-the-defensive-deployment-of-pathogen-sequencing" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="https://www.rebuilding.tech/posts/accelerating-the-defensive-deployment-of-pathogen-sequencing" class="no-external">For the <span>Techno-Industrial Policy Playbook</span>—a collaboration by IFP, FAI, American Compass, and NAIA—I provide policy recommendations on how the US government can accelerate both environmental and clinical surveillance of new pathogen outbreaks.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="https://www.rebuilding.tech/posts/accelerating-the-defensive-deployment-of-pathogen-sequencing" class="no-external">
+<div class="listing-date">
+May 6, 2025
+</div>
+<div class="listing-author">
+Simon Grimm
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
 <section id="white-papers" class="level2">
 <h2 class="anchored" data-anchor-id="white-papers">White Papers</h2>
 <div id="listing-white-papers" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1719806400000">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1749355200000">
+<div class="thumbnail">
+<p><a href="https://naobservatory.org/blog/swab-based-p2ra/" class="no-external"></a></p><a href="https://naobservatory.org/blog/swab-based-p2ra/" class="no-external">
+<p><img loading="lazy" src="img/swab-ww-estimation.svg" class="thumbnail-image"></p>
+</a><p><a href="https://naobservatory.org/blog/swab-based-p2ra/" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://naobservatory.org/blog/swab-based-p2ra/" class="no-external">Estimating the Sensitivity of Wastewater Metagenomic Sequencing using Nasal Swabs</a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://naobservatory.org/blog/swab-based-p2ra/" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="https://naobservatory.org/blog/swab-based-p2ra/" class="no-external">Using sequencing data from both NAO’s wastewater and swab sampling system, we estimate the sensitivity of wastewater metagenomic sequencing for pathogen detection.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="https://naobservatory.org/blog/swab-based-p2ra/" class="no-external">
+<div class="listing-date">
+Jun 8, 2025
+</div>
+<div class="listing-author">
+Simon Grimm, Dan Rice, Mike McLaren
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1719806400000">
 <div class="thumbnail">
 <p><a href="https://naobservatory.org/blog/investigating-the-sensitivity-of-pooled-swab-sampling-for-pathogen-early-detection" class="no-external"></a></p><a href="https://naobservatory.org/blog/investigating-the-sensitivity-of-pooled-swab-sampling-for-pathogen-early-detection" class="no-external">
 <p><img loading="lazy" src="img/swab_sensitivity.svg" class="thumbnail-image"></p>
@@ -331,7 +481,7 @@ Simon Grimm, Will Bradshaw
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1708318800000">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1708318800000">
 <div class="thumbnail">
 <p><a href="https://naobservatory.org/reports/comparing-sampling-strategies-for-early-detection-of-stealth-biothreats" class="no-external"></a></p><a href="https://naobservatory.org/reports/comparing-sampling-strategies-for-early-detection-of-stealth-biothreats" class="no-external">
 <p><img loading="lazy" src="img/novelty_detection.png" class="thumbnail-image"></p>
@@ -369,7 +519,35 @@ No matching items
 <h2 class="anchored" data-anchor-id="preprintsarticles">Preprints/Articles</h2>
 <div id="listing-preprints" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1718164800000">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1740632400000">
+<div class="thumbnail">
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external"></a></p><a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external">
+<p><img loading="lazy" src="img/particle_concentration.png" class="thumbnail-image"></p>
+</a><p><a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external">Indoor Air Sampling for Detection of Viral Nucleic Acids</a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external">In this review we examine the sources and composition of viral bioaerosols, evaluate the benefits and drawbacks of air sampling technologies, and lay out strategies for effective implementation of air sampling programs.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external">
+<div class="listing-date">
+Feb 27, 2025
+</div>
+<div class="listing-author">
+Lennart Justen, Simon Grimm, Kevin Esvelt, Will Bradshaw
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1718164800000">
 <div class="thumbnail">
 <p><a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external"></a></p><a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external">
 <p><img loading="lazy" src="img/detection_threshold.png" class="thumbnail-image"></p>
@@ -383,7 +561,7 @@ No matching items
 <a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external"></a>
 </div>
 <div class="listing-description">
-<a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external">In this preprint, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to infer the sensitvitiy and cost of wastewater metagenomic sequencing for pathogen early detection.</a>
+<a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external">In this preprint, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to infer the sensitivity and cost of wastewater metagenomic sequencing for pathogen early detection.</a>
 </div>
 </div>
 <div class="metadata">
@@ -393,34 +571,6 @@ Jun 12, 2024
 </div>
 <div class="listing-author">
 Simon Grimm, Jeff Kaufman, et al.
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1715572800000">
-<div class="thumbnail">
-<p><a href="https://dx.doi.org/10.2139/ssrn.4823882" class="no-external"></a></p><a href="https://dx.doi.org/10.2139/ssrn.4823882" class="no-external">
-<p><img loading="lazy" src="img/particle_concentration.png" class="thumbnail-image"></p>
-</a><p><a href="https://dx.doi.org/10.2139/ssrn.4823882" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://dx.doi.org/10.2139/ssrn.4823882" class="no-external">Indoor Air Sampling for Detection of Viral Nucleic Acids</a>
-</h3>
-<div class="listing-subtitle">
-<a href="https://dx.doi.org/10.2139/ssrn.4823882" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="https://dx.doi.org/10.2139/ssrn.4823882" class="no-external">In this review we examine the sources and composition of viral bioaerosols, evaluate the benefits and drawbacks of air sampling technologies, and lay out strategies for effective implementation of air sampling programs.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="https://dx.doi.org/10.2139/ssrn.4823882" class="no-external">
-<div class="listing-date">
-May 13, 2024
-</div>
-<div class="listing-author">
-Lennart Justen, Simon Grimm, Kevin Esvelt, Will Bradshaw
 </div>
 </a>
 </div>
@@ -435,26 +585,7 @@ No matching items
 <h2 class="anchored" data-anchor-id="blog-posts">Blog Posts</h2>
 <div id="listing-blog-listings" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="AI,Economics,Germany" data-listing-date-sort="1696996800000" data-listing-file-modified-sort="1726491538361" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1223">
-<a href="./blog/thoughts-and-links-i/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./blog/thoughts-and-links-i/img/landscape_ruegen.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Thoughts and Links I
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Oct 11, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1695960000000" data-listing-file-modified-sort="1731167558289" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2272">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1695960000000" data-listing-file-modified-sort="1731167558289" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2272">
 <a href="./blog/german-abundance/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -473,7 +604,7 @@ Sep 29, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1667275200000" data-listing-file-modified-sort="1731167564633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1782">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1667275200000" data-listing-file-modified-sort="1731167564633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1782">
 <a href="./blog/talent-sorting/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">

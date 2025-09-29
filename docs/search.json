@@ -74,28 +74,28 @@
     "href": "index.html",
     "title": "Simon Grimm",
     "section": "",
-    "text": "Hi there, I'm Simon Grimm. I am currently working on building a reliable early warning system to detect novel pandemics at the Nucleic Acid Observatory (NAO), working with Will Bradshaw, Jeff Kaufman, and others. I'm affiliated with MIT's Sculpting Evolution and SecureBio.\n\n            \n            If you want to learn more about the NAO, biosecurity, or other things I'm interested in, please reach out: simonleandergrimm@gmail.com. You can also find me on Twitter, Github, Linkedin, and Goodreads."
+    "text": "Hi there, I'm Simon Grimm. I am currently working on building a reliable early warning system to detect novel pandemics at the Nucleic Acid Observatory (NAO), working with Will Bradshaw, Jeff Kaufman, and others.\n\n            \n            If you want to chat please reach out via mail (simonleandergrimm@gmail.com) or Twitter (@simon__grimm). You can also find me on GitHub, Linkedin, and Goodreads."
   },
   {
     "objectID": "index.html#white-papers",
     "href": "index.html#white-papers",
     "title": "Simon Grimm",
     "section": "White Papers",
-    "text": "White Papers\n\n\n\n\n\n\n\n\n\n\nInvestigating the Sensitivity of Pooled Swab Sampling for Pathogen Early Detection\n\n\n\n\n\nWill Bradshaw and I take existing swab sample sequencing data, adjust it to better represent samples from non-hospital settings, and use the results to model the likely sensitivity of a swab-sampling and metagenomics-based early detection system.\n\n\n\n\n\nJul 1, 2024\n\n\nSimon Grimm, Will Bradshaw\n\n\n\n\n\n\n\n\n\n\n\n\nComparing Sampling Strategies for Early Detection of Stealth Biothreats\n\n\n\n\n\nWill Bradshaw and I outline how to think about the benefits and drawbacks of different sampling strategies for the early detection of asymptomatically spreading pathogens. Frameworks like the ones discussed in the report are used by the NAO to assess various sampling strategies, like wastewater or swab sampling.\n\n\n\n\n\nFeb 19, 2024\n\n\nWill Bradshaw, Simon Grimm\n\n\n\n\n\n\nNo matching items"
+    "text": "White Papers\n\n\n\n\n\n\n\n\n\n\nEstimating the Sensitivity of Wastewater Metagenomic Sequencing using Nasal Swabs\n\n\n\n\n\nUsing sequencing data from both NAO’s wastewater and swab sampling system, we estimate the sensitivity of wastewater metagenomic sequencing for pathogen detection.\n\n\n\n\n\nJun 8, 2025\n\n\nSimon Grimm, Dan Rice, Mike McLaren\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigating the Sensitivity of Pooled Swab Sampling for Pathogen Early Detection\n\n\n\n\n\nWill Bradshaw and I take existing swab sample sequencing data, adjust it to better represent samples from non-hospital settings, and use the results to model the likely sensitivity of a swab-sampling and metagenomics-based early detection system.\n\n\n\n\n\nJul 1, 2024\n\n\nSimon Grimm, Will Bradshaw\n\n\n\n\n\n\n\n\n\n\n\n\nComparing Sampling Strategies for Early Detection of Stealth Biothreats\n\n\n\n\n\nWill Bradshaw and I outline how to think about the benefits and drawbacks of different sampling strategies for the early detection of asymptomatically spreading pathogens. Frameworks like the ones discussed in the report are used by the NAO to assess various sampling strategies, like wastewater or swab sampling.\n\n\n\n\n\nFeb 19, 2024\n\n\nWill Bradshaw, Simon Grimm\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#preprintsarticles",
     "href": "index.html#preprintsarticles",
     "title": "Simon Grimm",
     "section": "Preprints/Articles",
-    "text": "Preprints/Articles\n\n\n\n\n\n\n\n\n\n\nInferring the Sensitivity of Wastewater Metagenomic Sequencing for Pathogen Early Detection\n\n\n\n\n\nIn this preprint, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to infer the sensitvitiy and cost of wastewater metagenomic sequencing for pathogen early detection.\n\n\n\n\n\nJun 12, 2024\n\n\nSimon Grimm, Jeff Kaufman, et al.\n\n\n\n\n\n\n\n\n\n\n\n\nIndoor Air Sampling for Detection of Viral Nucleic Acids\n\n\n\n\n\nIn this review we examine the sources and composition of viral bioaerosols, evaluate the benefits and drawbacks of air sampling technologies, and lay out strategies for effective implementation of air sampling programs.\n\n\n\n\n\nMay 13, 2024\n\n\nLennart Justen, Simon Grimm, Kevin Esvelt, Will Bradshaw\n\n\n\n\n\n\nNo matching items"
+    "text": "Preprints/Articles\n\n\n\n\n\n\n\n\n\n\nIndoor Air Sampling for Detection of Viral Nucleic Acids\n\n\n\n\n\nIn this review we examine the sources and composition of viral bioaerosols, evaluate the benefits and drawbacks of air sampling technologies, and lay out strategies for effective implementation of air sampling programs.\n\n\n\n\n\nFeb 27, 2025\n\n\nLennart Justen, Simon Grimm, Kevin Esvelt, Will Bradshaw\n\n\n\n\n\n\n\n\n\n\n\n\nInferring the Sensitivity of Wastewater Metagenomic Sequencing for Pathogen Early Detection\n\n\n\n\n\nIn this preprint, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to infer the sensitivity and cost of wastewater metagenomic sequencing for pathogen early detection.\n\n\n\n\n\nJun 12, 2024\n\n\nSimon Grimm, Jeff Kaufman, et al.\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#blog-posts",
     "href": "index.html#blog-posts",
     "title": "Simon Grimm",
     "section": "Blog Posts",
-    "text": "Blog Posts\n\n\n\n\n\n\n\n\n\n\nThoughts and Links I\n\n\n\nOct 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGermany’s slow move toward supply-side reform\n\n\n\nSep 29, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOn why talent sorting in Germany is flawed\n\n\n\nNov 1, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Blog Posts\n\n\n\n\n\n\n\n\n\n\nGermany’s slow move toward supply-side reform\n\n\n\nSep 29, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOn why talent sorting in Germany is flawed\n\n\n\nNov 1, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/german-abundance/index.html",
@@ -152,5 +152,12 @@
     "title": "Blog",
     "section": "",
     "text": "Germany’s slow move toward supply-side reform\n\n\nHigh energy prices, a skilled labor shortage, and bureaucratic hurdles stand in the way of economic growth. If holdouts can be convinced, the response may resemble American supply-side liberalism.\n\n\n\n\n\nSep 29, 2023\n\n\nSimon Grimm\n\n\n\n\n\n\n\n\n\n\n\n\nOn why talent sorting in Germany is flawed\n\n\nMedical school is great, but shouldn’t be the default for high-achieving kids\n\n\n\n\n\nNov 1, 2022\n\n\nSimon Grimm\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#policy-briefs",
+    "href": "index.html#policy-briefs",
+    "title": "Simon Grimm",
+    "section": "Policy Briefs",
+    "text": "Policy Briefs\n\n\n\n\n\n\n\n\n\n\nScaling US Pathogen Detection\n\n\n\n\n\nHere we model how the US could dramatically scale up its pathogen detection capabilities at a funding level of $52M/year. The system design is both informed by modeling work, and NAO’s extensive experience modeling metagenomic biourveillance.\n\n\n\n\n\nSep 23, 2025\n\n\nSimon Grimm, Lennart Justen, Jeff Kaufman\n\n\n\n\n\n\n\n\n\n\n\n\nScaling Pathogen Detection with Metagenomics\n\n\n\n\n\nFor the Institute for Progress’ Launch Sequence series, I describe how government deployment of metagenomic sequencing, combined with the increased use of frontier AI for data analysis, can identify both known and novel pathogens.\n\n\n\n\n\nAug 11, 2025\n\n\nSimon Grimm\n\n\n\n\n\n\n\n\n\n\n\n\nAccelerating the Defensive Deployment of Pathogen Sequencing\n\n\n\n\n\nFor the Techno-Industrial Policy Playbook—a collaboration by IFP, FAI, American Compass, and NAIA—I provide policy recommendations on how the US government can accelerate both environmental and clinical surveillance of new pathogen outbreaks.\n\n\n\n\n\nMay 6, 2025\n\n\nSimon Grimm\n\n\n\n\n\n\nNo matching items"
   }
 ]
