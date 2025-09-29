@@ -5,7 +5,7 @@
     - Jeff Kaufman
   date: 2025-09-23
   path: "https://naobservatory.org/blog/biothreat_radar"
-  description: "Here we model how the US could dramatically scale up its pathogen detection capabilities at a funding level of $52M/year. The system design is both informed by modeling work, and NAO's extensive experience modeling metagenomic biourveillance."
+  description: "Here we model how the US could dramatically scale up its pathogen detection capabilities at a funding level of $52M/year. The system design is both informed by modeling work, and NAO's extensive experience piloting metagenomic biourveillance."
   image: "img/at-scale-surveillance.svg"
 
 
