@@ -28,22 +28,19 @@ listing:
     type: default
     fields: [image, date, title, description, author]
     #image-height: 200px
-  - id: preprints
+  - id: papers
     contents:
-      - "content_listings/preprints.yml"
+      - "content_listings/papers.yml"
     sort: "date desc"
     type: default
     fields: [image, date, title, description, author]
   - id: blog-listings
     contents:
-      - "german-abundance/index.qmd"
-      - "talent-sorting/index.qmd"
+      - "content_listings/blog_posts.yml"
     sort: "date desc"
     type: grid
     fields: [image, date, title]
     image-height: 250px
-
-
 
 
 
@@ -103,9 +100,9 @@ listing:
 :::{#white-papers}
 :::
 
-## Preprints/Articles
+## Academic Publications
 
-:::{#preprints}
+:::{#papers}
 :::
 
 ## Blog Posts

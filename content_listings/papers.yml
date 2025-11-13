@@ -1,0 +1,20 @@
+- title: "Inferring the Sensitivity of Wastewater Metagenomic Sequencing for Pathogen Early Detection<br><span style='font-weight: 300; color: #666;'>The Lancet Microbe</span>"
+  author:
+   - Simon Grimm
+   - Jeff Kaufman
+   - et al.
+  date: 2025-10-14
+  path: "https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00115-6/fulltext"
+  description: "In this paper, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to infer the sensitivity and cost of wastewater metagenomic sequencing for pathogen early detection."
+  image: "img/lancet-microbe-fig1a.png"
+
+- title: "Indoor Air Sampling for Detection of Viral Nucleic Acids <br><span style='font-weight: 300; color: #666;'>Journal of Aerosol Science</span>"
+  author:
+    - Lennart Justen
+    - Simon Grimm
+    - Kevin Esvelt
+    - Will Bradshaw
+  date: 2025-02-27
+  path: "https://www.sciencedirect.com/science/article/pii/S0021850225000266"
+  description: "In this review we examine the sources and composition of viral bioaerosols, evaluate the benefits and drawbacks of air sampling technologies, and lay out strategies for effective implementation of air sampling programs."
+  image: "img/particle_concentration.png"

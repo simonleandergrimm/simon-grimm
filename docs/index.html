@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-preprints .list');
+    const listingTargetEl = window.document.querySelector('#listing-papers .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -141,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-preprints'] = new List('listing-preprints', options);
+    window['quarto-listings']['listing-papers'] = new List('listing-papers', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -165,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -242,12 +242,6 @@ window.Quarto = {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-</ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/simon_grimm"> <i class="bi bi-twitter" role="img">
@@ -515,11 +509,39 @@ No matching items
 </div>
 </div>
 </section>
-<section id="preprintsarticles" class="level2">
-<h2 class="anchored" data-anchor-id="preprintsarticles">Preprints/Articles</h2>
-<div id="listing-preprints" class="quarto-listing quarto-listing-container-default">
+<section id="academic-publications" class="level2">
+<h2 class="anchored" data-anchor-id="academic-publications">Academic Publications</h2>
+<div id="listing-papers" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1740632400000">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1760414400000">
+<div class="thumbnail">
+<p><a href="https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00115-6/fulltext" class="no-external"></a></p><a href="https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00115-6/fulltext" class="no-external">
+<p><img loading="lazy" src="img/lancet-microbe-fig1a.png" class="thumbnail-image"></p>
+</a><p><a href="https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00115-6/fulltext" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00115-6/fulltext" class="no-external">Inferring the Sensitivity of Wastewater Metagenomic Sequencing for Pathogen Early Detection<br><span style="font-weight: 300; color: #666;">The Lancet Microbe</span></a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00115-6/fulltext" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00115-6/fulltext" class="no-external">In this paper, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to infer the sensitivity and cost of wastewater metagenomic sequencing for pathogen early detection.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00115-6/fulltext" class="no-external">
+<div class="listing-date">
+Oct 14, 2025
+</div>
+<div class="listing-author">
+Simon Grimm, Jeff Kaufman, et al.
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1740632400000">
 <div class="thumbnail">
 <p><a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external"></a></p><a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external">
 <p><img loading="lazy" src="img/particle_concentration.png" class="thumbnail-image"></p>
@@ -527,7 +549,7 @@ No matching items
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external">Indoor Air Sampling for Detection of Viral Nucleic Acids</a>
+<a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external">Indoor Air Sampling for Detection of Viral Nucleic Acids <br><span style="font-weight: 300; color: #666;">Journal of Aerosol Science</span></a>
 </h3>
 <div class="listing-subtitle">
 <a href="https://www.sciencedirect.com/science/article/pii/S0021850225000266" class="no-external"></a>
@@ -547,34 +569,6 @@ Lennart Justen, Simon Grimm, Kevin Esvelt, Will Bradshaw
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1718164800000">
-<div class="thumbnail">
-<p><a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external"></a></p><a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external">
-<p><img loading="lazy" src="img/detection_threshold.png" class="thumbnail-image"></p>
-</a><p><a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external">Inferring the Sensitivity of Wastewater Metagenomic Sequencing for Pathogen Early Detection</a>
-</h3>
-<div class="listing-subtitle">
-<a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external">In this preprint, we create a modelling framework that combines epidemiological data and metagenomic sequencing data to infer the sensitivity and cost of wastewater metagenomic sequencing for pathogen early detection.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="https://www.medrxiv.org/content/10.1101/2023.06.08.23291050v1.full" class="no-external">
-<div class="listing-date">
-Jun 12, 2024
-</div>
-<div class="listing-author">
-Simon Grimm, Jeff Kaufman, et al.
-</div>
-</a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -585,8 +579,27 @@ No matching items
 <h2 class="anchored" data-anchor-id="blog-posts">Blog Posts</h2>
 <div id="listing-blog-listings" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1695960000000" data-listing-file-modified-sort="1731167558289" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2272">
-<a href="./blog/german-abundance/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1760414400000">
+<a href="https://simongrimm.substack.com/p/why-is-switzerland-so-rich" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="img/zurich.png" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Why is Switzerland so rich?
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Oct 14, 2025
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1695960000000">
+<a href="https://simongrimm.substack.com/p/germanys-slow-move-toward-supply" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F71ac7b9c-f52c-45bd-b065-ea1ee00ad38b_1266x1600.png" class="thumbnail-image card-img" style="height: 250px;">
@@ -604,11 +617,11 @@ Sep 29, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1667275200000" data-listing-file-modified-sort="1731167564633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1782">
-<a href="./blog/talent-sorting/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1667275200000">
+<a href="https://simongrimm.substack.com/p/medical-school-is-a-bad-choice-for" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./blog/talent-sorting/img/berlin-university.jpg" class="thumbnail-image card-img" style="height: 250px;">
+<img loading="lazy" src="img/berlin-university.jpg" class="thumbnail-image card-img" style="height: 250px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">

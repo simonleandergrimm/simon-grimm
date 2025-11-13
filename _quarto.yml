@@ -35,9 +35,6 @@ website:
   navbar:
     pinned: true
     # logo: /img/windmill-icon.png
-    left:
-      - text: Blog
-        href: blog/index.qmd
     right:
       - icon: twitter
         href: https://twitter.com/simon_grimm
