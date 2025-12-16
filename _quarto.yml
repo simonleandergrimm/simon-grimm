@@ -34,6 +34,7 @@ website:
 
   navbar:
     pinned: true
+    background: "#2c7b6c"
     # logo: /img/windmill-icon.png
     right:
       - icon: twitter
