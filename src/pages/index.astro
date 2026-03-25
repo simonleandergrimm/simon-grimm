@@ -1,0 +1,87 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import BlogCard from '../components/BlogCard.astro';
+import { papers } from '../data/papers';
+import { policyBriefs } from '../data/policyBriefs';
+import { whitePapers } from '../data/whitePapers';
+import { fetchSubstackFeed } from '../utils/fetchSubstackFeed';
+
+const posts = await fetchSubstackFeed();
+---
+
+<PageLayout title="Simon Grimm">
+  <HeroSection />
+
+  <section id="blog" class="section container">
+    <h2 class="section-title">Personal Writing</h2>
+    {posts.length > 0 ? (
+      <div class="card-grid">
+        {posts.map((post) => (
+          <BlogCard
+            title={post.title}
+            url={post.url}
+            date={post.date}
+            excerpt={post.excerpt}
+            image={post.image}
+          />
+        ))}
+      </div>
+    ) : (
+      <p class="no-posts">No posts found. Check back soon.</p>
+    )}
+  </section>
+
+  <section id="policy" class="section container">
+    <h2 class="section-title">Policy Briefs</h2>
+    <div class="card-grid">
+      {policyBriefs.map((brief) => (
+        <PublicationCard
+          title={brief.title}
+          description={brief.description}
+          url={brief.url}
+          image={brief.image}
+          authors={brief.authors}
+          date={brief.date}
+          category="Policy Brief"
+        />
+      ))}
+    </div>
+  </section>
+
+  <section id="white-papers" class="section container">
+    <h2 class="section-title">White Papers</h2>
+    <div class="card-grid">
+      {whitePapers.map((wp) => (
+        <PublicationCard
+          title={wp.title}
+          description={wp.description}
+          url={wp.url}
+          image={wp.image}
+          authors={wp.authors}
+          date={wp.date}
+          category="White Paper"
+        />
+      ))}
+    </div>
+  </section>
+
+  <section id="papers" class="section container">
+    <h2 class="section-title">Academic Publications</h2>
+    <div class="card-grid">
+      {papers.map((paper) => (
+        <PublicationCard
+          title={paper.title}
+          description={paper.description}
+          url={paper.url}
+          image={paper.image}
+          authors={paper.authors}
+          date={paper.date}
+          category="Article"
+          venue={paper.venue}
+        />
+      ))}
+    </div>
+  </section>
+</PageLayout>

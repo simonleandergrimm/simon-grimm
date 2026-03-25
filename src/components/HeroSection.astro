@@ -1,0 +1,73 @@
+---
+import SocialLinks from './SocialLinks.astro';
+---
+
+<section class="hero container">
+  <div class="hero-content">
+    <p>
+      Hi there, I'm Simon Grimm. I work on building a reliable early warning system to detect novel pandemics at the
+      <a href="https://naobservatory.org/" target="_blank" rel="noopener noreferrer">Nucleic Acid Observatory (NAO)</a>,
+      working with
+      <a href="https://www.linkedin.com/in/willbradshaw" target="_blank" rel="noopener noreferrer">Will Bradshaw</a>,
+      <a href="https://jefftk.com/" target="_blank" rel="noopener noreferrer">Jeff Kaufman</a>,
+      and others.
+    </p>
+    <p>
+      If you want to chat, please reach out via
+      <a href="mailto:simonleandergrimm@gmail.com">email</a> or
+      <a href="https://twitter.com/simon__grimm" target="_blank" rel="noopener noreferrer">Twitter</a>.
+    </p>
+    <SocialLinks />
+  </div>
+  <div class="hero-image">
+    <img src="/img/simon_headshot.png" alt="Simon Grimm" width="280" height="280" />
+  </div>
+</section>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-8);
+    align-items: center;
+    padding-top: var(--space-10);
+    padding-bottom: var(--space-10);
+  }
+
+  .hero-content p {
+    font-size: 1.0625rem;
+    color: var(--color-text);
+    line-height: 1.8;
+  }
+
+  .hero-content p a {
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-underline-offset: 3px;
+  }
+
+  .hero-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+
+    .hero-image {
+      order: -1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+</style>

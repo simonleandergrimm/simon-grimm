@@ -1,0 +1,3 @@
+# Netlify redirects
+# Redirect old Quarto paths if needed
+/index.html    /    301

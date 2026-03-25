@@ -1,9 +1,0 @@
----
-title: "404"
-comments: false
-sidebar: false
----
-
-:::{.column-screen}
-404, not found 🤖.
-:::

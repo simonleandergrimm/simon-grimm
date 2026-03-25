@@ -1,0 +1,49 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import { policyBriefs } from '../data/policyBriefs';
+---
+
+<PageLayout title="Policy — Simon Grimm" description="Policy briefs on pathogen detection, biosurveillance infrastructure, and pandemic preparedness.">
+  <div class="container">
+    <section class="section">
+      <h1 class="page-title">Policy</h1>
+      <p class="page-description">
+        Policy briefs on scaling pathogen detection, biosurveillance infrastructure, and pandemic preparedness.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Policy Briefs</h2>
+      <div class="card-grid">
+        {policyBriefs.map((brief) => (
+          <PublicationCard
+            title={brief.title}
+            description={brief.description}
+            url={brief.url}
+            image={brief.image}
+            authors={brief.authors}
+            date={brief.date}
+            category="Policy Brief"
+          />
+        ))}
+      </div>
+    </section>
+  </div>
+</PageLayout>
+
+<style>
+  .page-title {
+    margin-bottom: var(--space-4);
+  }
+
+  .page-description {
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    max-width: 680px;
+  }
+
+  .section:first-of-type {
+    padding-bottom: 0;
+  }
+</style>

@@ -1,5 +1,16 @@
 {
+  "name": "simon-grimm-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
   "dependencies": {
-    "@quarto/netlify-plugin-quarto": "^0.0.5"
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^5.17.1",
+    "rss-parser": "^3.13.0"
   }
 }

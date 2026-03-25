@@ -1,0 +1,62 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import BlogCard from '../components/BlogCard.astro';
+import { fetchSubstackFeed } from '../utils/fetchSubstackFeed';
+
+const posts = await fetchSubstackFeed();
+---
+
+<PageLayout title="Blog — Simon Grimm" description="Blog posts on biosurveillance, policy, and technology.">
+  <div class="container">
+    <section class="section">
+      <h1 class="page-title">Blog</h1>
+      <p class="page-description">
+        Posts from my <a href="https://simongrimm.substack.com" target="_blank" rel="noopener noreferrer">Substack</a>, fetched at build time.
+      </p>
+    </section>
+
+    <section class="section">
+      {posts.length > 0 ? (
+        <div class="card-grid">
+          {posts.map((post) => (
+            <BlogCard
+              title={post.title}
+              url={post.url}
+              date={post.date}
+              excerpt={post.excerpt}
+              image={post.image}
+            />
+          ))}
+        </div>
+      ) : (
+        <p class="no-posts">No posts found. Check back soon.</p>
+      )}
+    </section>
+  </div>
+</PageLayout>
+
+<style>
+  .page-title {
+    margin-bottom: var(--space-4);
+  }
+
+  .page-description {
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    max-width: 680px;
+  }
+
+  .page-description a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .section:first-of-type {
+    padding-bottom: 0;
+  }
+
+  .no-posts {
+    color: var(--color-text-tertiary);
+    font-style: italic;
+  }
+</style>

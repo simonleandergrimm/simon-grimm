@@ -1,0 +1,68 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import { papers } from '../data/papers';
+import { whitePapers } from '../data/whitePapers';
+---
+
+<PageLayout title="Research — Simon Grimm" description="Academic papers and white papers on pathogen detection, biosurveillance, and pandemic preparedness.">
+  <div class="container">
+    <section class="section">
+      <h1 class="page-title">Research</h1>
+      <p class="page-description">
+        Academic publications and white papers on pathogen early detection, wastewater surveillance, and biosecurity.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Academic Publications</h2>
+      <div class="card-grid">
+        {papers.map((paper) => (
+          <PublicationCard
+            title={paper.title}
+            description={paper.description}
+            url={paper.url}
+            image={paper.image}
+            authors={paper.authors}
+            date={paper.date}
+            category="Article"
+            venue={paper.venue}
+          />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">White Papers</h2>
+      <div class="card-grid">
+        {whitePapers.map((wp) => (
+          <PublicationCard
+            title={wp.title}
+            description={wp.description}
+            url={wp.url}
+            image={wp.image}
+            authors={wp.authors}
+            date={wp.date}
+            category="White Paper"
+          />
+        ))}
+      </div>
+    </section>
+  </div>
+</PageLayout>
+
+<style>
+  .page-title {
+    margin-bottom: var(--space-4);
+  }
+
+  .page-description {
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    max-width: 680px;
+  }
+
+  .section:first-of-type {
+    padding-bottom: 0;
+  }
+</style>
