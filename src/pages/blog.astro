@@ -25,7 +25,7 @@ import PageLayout from '../layouts/PageLayout.astro';
     if (!container) return;
 
     try {
-      const res = await fetch('https://simongrimm.substack.com/api/v1/posts?limit=50');
+      const res = await fetch('/substack-posts.json');
       if (!res.ok) throw new Error(`Status ${res.status}`);
       const posts = await res.json();
 

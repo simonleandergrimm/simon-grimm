@@ -24,6 +24,13 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Fetch Substack posts
+        run: |
+          curl -s -f \
+            -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' \
+            -H 'Accept: application/json' \
+            'https://simongrimm.substack.com/api/v1/posts?limit=50' \
+            -o public/substack-posts.json || echo '[]' > public/substack-posts.json
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
