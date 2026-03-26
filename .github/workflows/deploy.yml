@@ -24,8 +24,6 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - name: Fetch Substack posts
-        run: node scripts/fetch-substack.mjs
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -17,9 +17,6 @@ pnpm-debug.log*
 .env
 .env.production
 
-# fetched at build time
-public/substack-posts.json
-
 # macOS
 .DS_Store
 
