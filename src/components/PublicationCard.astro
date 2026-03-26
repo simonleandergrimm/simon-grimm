@@ -10,7 +10,7 @@ interface Props {
   venue?: string;
 }
 
-const { title, description, url, image, authors, date } = Astro.props;
+const { title, description, url, image, authors, date, venue } = Astro.props;
 
 const formattedDate = new Date(date).toLocaleDateString('en-US', {
   year: 'numeric',
