@@ -33,7 +33,12 @@ function decodeHtmlEntities(text: string): string {
 }
 
 export async function fetchSubstackFeed(): Promise<BlogPost[]> {
-  const parser = new Parser();
+  const parser = new Parser({
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (compatible; SimonGrimmSite/1.0; +https://simongrimm.com)',
+      'Accept': 'application/rss+xml, application/xml, text/xml',
+    },
+  });
 
   try {
     const feed = await parser.parseURL('https://simongrimm.substack.com/feed');
