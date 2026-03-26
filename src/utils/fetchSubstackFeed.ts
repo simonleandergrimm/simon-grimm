@@ -33,15 +33,24 @@ function decodeHtmlEntities(text: string): string {
 }
 
 export async function fetchSubstackFeed(): Promise<BlogPost[]> {
-  const parser = new Parser({
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (compatible; SimonGrimmSite/1.0; +https://simongrimm.com)',
-      'Accept': 'application/rss+xml, application/xml, text/xml',
-    },
-  });
+  const parser = new Parser();
 
   try {
-    const feed = await parser.parseURL('https://simongrimm.substack.com/feed');
+    // Use fetch instead of rss-parser's built-in HTTP client to avoid
+    // Substack's bot detection blocking Node.js http requests from CI
+    const response = await fetch('https://simongrimm.substack.com/feed', {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; SimonGrimmSite/1.0; +https://simongrimm.com)',
+        'Accept': 'application/rss+xml, application/xml, text/xml',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Status code ${response.status}`);
+    }
+
+    const xml = await response.text();
+    const feed = await parser.parseString(xml);
 
     return (feed.items || []).map((item) => {
       const content = item['content:encoded'] || '';
