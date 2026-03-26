@@ -1,6 +1,4 @@
 ---
-import CategoryTag from './CategoryTag.astro';
-
 interface Props {
   title: string;
   description: string;
@@ -12,7 +10,7 @@ interface Props {
   venue?: string;
 }
 
-const { title, description, url, image, authors, date, category, venue } = Astro.props;
+const { title, description, url, image, authors, date } = Astro.props;
 
 const formattedDate = new Date(date).toLocaleDateString('en-US', {
   year: 'numeric',
@@ -28,8 +26,7 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
   )}
   <div class="card-body">
     <div class="card-meta">
-      <CategoryTag category={category} />
-      <span class="card-date">{formattedDate}</span>
+      <span class="date-tag">{formattedDate}</span>
     </div>
     <h3 class="card-title">{title}</h3>
     {venue && <p class="card-venue">{venue}</p>}
@@ -76,9 +73,17 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
     gap: var(--space-3);
   }
 
-  .card-date {
-    font-size: 0.8125rem;
-    color: var(--color-text-tertiary);
+  .date-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-tag-text);
+    background-color: var(--color-tag-bg);
+    border-radius: var(--radius-sm);
+    line-height: 1.6;
   }
 
   .card-title {
