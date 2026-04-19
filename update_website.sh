@@ -13,9 +13,12 @@ node scripts/sync-substack-posts.mjs "$@"
 
 echo
 if git diff --quiet -- public/; then
-  echo "No content changes. Skipping commit."
+  echo "No content changes. Skipping build and commit."
   exit 0
 fi
+
+echo "→ Building to verify"
+npm run build >/dev/null
 
 echo "→ Changes:"
 git -c color.status=always status --short public/
