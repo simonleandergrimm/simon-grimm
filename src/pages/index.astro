@@ -1,10 +1,12 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
+import BlogCard from '../components/BlogCard.astro';
 import PublicationCard from '../components/PublicationCard.astro';
 import { papers } from '../data/papers';
 import { policyBriefs } from '../data/policyBriefs';
 import { whitePapers } from '../data/whitePapers';
+import { substackPosts } from '../utils/substackPosts';
 ---
 
 <PageLayout title="Simon Grimm">
@@ -12,8 +14,22 @@ import { whitePapers } from '../data/whitePapers';
 
   <section id="blog" class="section container">
     <h2 class="section-title">Personal Writing</h2>
-    <div id="home-blog-posts" class="card-grid">
-      <p class="loading">Loading posts…</p>
+    <div class="card-grid">
+      {substackPosts.length === 0 ? (
+        <p class="no-posts">
+          Could not load posts. Visit <a href="https://simongrimm.substack.com" target="_blank" rel="noopener noreferrer">my Substack</a> directly.
+        </p>
+      ) : (
+        substackPosts.map((post) => (
+          <BlogCard
+            title={post.title}
+            url={post.url}
+            date={post.date}
+            excerpt={post.excerpt}
+            image={post.image}
+          />
+        ))
+      )}
     </div>
   </section>
 
@@ -69,54 +85,3 @@ import { whitePapers } from '../data/whitePapers';
     </div>
   </section>
 </PageLayout>
-
-<script>
-  async function loadPosts() {
-    const container = document.getElementById('home-blog-posts');
-    if (!container) return;
-
-    try {
-      const res = await fetch('/substack-posts.json');
-      if (!res.ok) throw new Error(`Status ${res.status}`);
-      const posts = await res.json();
-
-      if (posts.length === 0) {
-        container.innerHTML = '<p class="no-posts">No posts found. Check back soon.</p>';
-        return;
-      }
-
-      container.innerHTML = posts.map((post: any) => {
-        const date = new Date(post.post_date).toLocaleDateString('en-US', {
-          year: 'numeric', month: 'long', day: 'numeric',
-        });
-        const optimized = post.cover_image
-          ? `https://substackcdn.com/image/fetch/w_720,c_limit,f_auto,q_auto:good,fl_progressive:steep/${encodeURIComponent(post.cover_image)}`
-          : null;
-        const imageHtml = optimized
-          ? `<div class="blog-card-image"><img src="${optimized}" alt="" loading="lazy" /></div>`
-          : '';
-        const excerptHtml = post.subtitle
-          ? `<p class="blog-card-excerpt">${post.subtitle}</p>`
-          : '';
-        return `
-          <a href="${post.canonical_url}" class="blog-card" target="_blank" rel="noopener noreferrer">
-            ${imageHtml}
-            <div class="blog-card-body">
-              <time class="blog-card-date">${date}</time>
-              <h3 class="blog-card-title">${post.title}</h3>
-              ${excerptHtml}
-            </div>
-          </a>
-        `;
-      }).join('');
-    } catch (e) {
-      container.innerHTML = `
-        <p class="no-posts">
-          Could not load posts. Visit <a href="https://simongrimm.substack.com" target="_blank" rel="noopener noreferrer">my Substack</a> directly.
-        </p>
-      `;
-    }
-  }
-
-  loadPosts();
-</script>
