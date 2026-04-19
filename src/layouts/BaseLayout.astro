@@ -1,5 +1,9 @@
 ---
 import '../styles/global.css';
+import interLatin400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
+import interLatin500 from '@fontsource/inter/files/inter-latin-500-normal.woff2?url';
+import interLatin600 from '@fontsource/inter/files/inter-latin-600-normal.woff2?url';
+import spectralLatin600 from '@fontsource/spectral/files/spectral-latin-600-normal.woff2?url';
 
 interface Props {
   title: string;
@@ -14,6 +18,7 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const isHome = Astro.url.pathname === '/';
 ---
 
 <!doctype html>
@@ -40,13 +45,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Preload critical fonts so first paint uses the final face, not fallback -->
+    <link rel="preload" href={interLatin400} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={interLatin500} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={interLatin600} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={spectralLatin600} as="font" type="font/woff2" crossorigin />
+
+    {isHome && (
+      <link rel="preload" as="image" href="/img/simon_headshot.webp" type="image/webp" fetchpriority="high" />
+    )}
 
     <!-- Dark mode — prevent flash -->
     <script is:inline>
