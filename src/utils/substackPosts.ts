@@ -28,10 +28,14 @@ function pickImage(post: RawSubstackPost): string | undefined {
   return optimizeCoverImage(post.cover_image);
 }
 
-export const substackPosts: SubstackPost[] = (rawPosts as RawSubstackPost[]).map((post) => ({
-  title: post.title,
-  url: post.canonical_url,
-  date: post.post_date,
-  excerpt: post.subtitle ?? '',
-  image: pickImage(post),
-}));
+const HIDDEN_SLUGS = new Set<string>(['germanys-slow-move-toward-supply']);
+
+export const substackPosts: SubstackPost[] = (rawPosts as RawSubstackPost[])
+  .filter((post) => !(post.slug && HIDDEN_SLUGS.has(post.slug)))
+  .map((post) => ({
+    title: post.title,
+    url: post.canonical_url,
+    date: post.post_date,
+    excerpt: post.subtitle ?? '',
+    image: pickImage(post),
+  }));
